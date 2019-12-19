@@ -1,27 +1,20 @@
-# SparkStarterAngular
+# ✨ spark-starter-angular
+This is a boilerplate repository for developing with Spark Angular components.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+This repository includes the Spark Design System assets and all required dependencies. Follow the steps below to get started.
 
-## Development server
+## Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Fork this repo.
+1. `clone` your forked repo with `git clone <yourRepoUrl>`.
+1. [Install Node](https://nodejs.org/en/).
+1. `cd` into the project directory and run `npm install`.
 
-## Code scaffolding
+## Quick Start
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Go through **Setup**.
+1. Run `npm run start` in your project directory.
 
-## Build
+## Adding Components
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Check out the **Adding Components** guide. (coming soon)
