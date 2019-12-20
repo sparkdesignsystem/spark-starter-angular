@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import "node_modules/@sparkdesignsystem/spark/spark.scss";
+
+.sprk-c-Masthead__big-nav-items {
+  flex-wrap: wrap;
+}
+
+.sprk-c-Masthead__content {
+  display: none;
+}
+
+$app-namespace: 'drizzle';
+
+//
+// React site specific styling
+//
+.#{$app-namespace}-b-h1 {
+  content: "";
+    width: 32px;
+    border-top: 5px solid #c8102e;
+    padding: 0 0 24px;
+}
+
+.#{$app-namespace}-b-h2 {
+  // color: $drizzle-black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.#{$app-namespace}-c-AngularHeader {
+  position: static;
+}
+
+.#{$app-namespace}-c-AngularNav {
+  // background-color: $sprk-black;
+  color: $sprk-white;
+  width: 100%;
+  padding: 0;
+}
+
+.#{$app-namespace}-c-AngularNav a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-out;
+
+}
+
+
+
+.#{$app-namespace}-b-List {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.#{$app-namespace}-b-List--inline {
+  margin: 0;
+  padding: 1rem;
+}
+
+.#{$app-namespace}-b-List--nested {
+  margin-left: 1rem;
+  list-style-type: circle;
+}
+
+.#{$app-namespace}-b-List--inline > li {
+  display: inline-block;
+}
+
+.#{$app-namespace}-b-List--spacing-m > li {
+  margin-bottom: 1rem;
+}
+
+.#{$app-namespace}-b-List--inline.#{$app-namespace}-b-List--spacing-m > li {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
