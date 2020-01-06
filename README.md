@@ -1,4 +1,4 @@
-# ✨ spark-starter-angular
+# ✨ spark-starter-angular `kitchen-sink`
 This is a boilerplate repository for developing with Spark Angular components.
 
 This repository includes the Spark Design System assets and all required dependencies. Follow the steps below to get started.
