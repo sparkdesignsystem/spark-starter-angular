@@ -15,6 +15,6 @@ This repository includes the Spark Design System assets and all required depende
 1. Go through **Setup**.
 1. Run `npm run start` in your project directory.
 
-## Adding Components
+## Next Steps
 
-Check out the **Adding Components** guide. (coming soon)
+Check out the **Spark Installation Guide for Angular**. (coming soon)
