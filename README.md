@@ -14,7 +14,3 @@ This repository includes the Spark Design System assets and all required depende
 
 1. Go through **Setup**.
 1. Run `npm run start` in your project directory.
-
-## Adding Components
-
-Check out the **Adding Components** guide. (coming soon)
