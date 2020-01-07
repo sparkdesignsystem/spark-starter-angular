@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$sprk-using-webfonts: true;
+$sprk-webfonts:
+  ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Bold.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Bold.woff') format('woff')), RocketSans, 700),
+  ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Medium.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Medium.woff') format('woff')), RocketSans, 500),
+  ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Regular.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Regular.woff') format('woff')), RocketSans, 400),
+  ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Light.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Light.woff') format('woff')), RocketSans, 300);
+
 @import "node_modules/@sparkdesignsystem/spark/spark.scss";
 
 .sprk-c-Masthead__big-nav-items {
