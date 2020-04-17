@@ -17,4 +17,4 @@ This repository includes the Spark Design System assets and all required depende
 
 ## Next Steps
 
-Check out the **Spark Installation Guide for Angular**. (coming soon)
+Check out our guide for [Installing Spark in an Angular Project](https://sparkdesignsystem.com/installing-spark/angular).
