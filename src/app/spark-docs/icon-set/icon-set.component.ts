@@ -9,7 +9,7 @@ export class IconSetComponent implements OnInit {
 
   ngOnInit(): void {
     window
-      .fetch('https://spark-assets.netlify.com/spark-core-icons.svg', {})
+      .fetch('https://spark-assets.netlify.app/spark-core-icons.svg', {})
       .then(response => response.text())
       .then(svg => {
         this.ref.nativeElement.innerHTML += svg;
