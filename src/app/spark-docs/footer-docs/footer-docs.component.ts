@@ -134,7 +134,7 @@ export class FooterDocsComponent {
       text: 'Lorem ipsum dolor sit amet, consectetur.',
       href: '/global-2',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
       imgCSS: 'sprk-u-Width-20',
       imgAlt: 'Foo',
       analytics: 'link-2'
@@ -143,7 +143,7 @@ export class FooterDocsComponent {
       text: 'Lorem ipsum dolor sit amet, consectetur.',
       href: '/global-3',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
       imgCSS: 'sprk-u-Width-20',
       imgAlt: 'Foo',
       analytics: 'link-2'
@@ -358,7 +358,7 @@ export class FooterDocsComponent {
     {
       href: '/awards-1',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
       imgCSS: 'drizzle-c-Logo-placeholder drizzle-c-Logo-placeholder--large',
       imgAlt: 'Foo',
       analytics: 'link-1'
@@ -366,7 +366,7 @@ export class FooterDocsComponent {
     {
       href: '/awards-2',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
       imgCSS: 'drizzle-c-Logo-placeholder drizzle-c-Logo-placeholder--large',
       imgAlt: 'Foo',
       analytics: 'link-2'

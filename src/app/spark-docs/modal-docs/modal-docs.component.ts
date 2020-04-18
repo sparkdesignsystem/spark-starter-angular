@@ -31,6 +31,7 @@ import { Component } from '@angular/core';
       [(isVisible)]="choiceVisible"
       title="Are you sure?"
       (hide)="toggleChoiceModal($event)"
+      (confirmClick) = "toggleChoiceModal($event)"
       modalType="choice"
       idString="modal-choice-1">This is some modal content.</sprk-modal>
     <sprk-modal
@@ -59,6 +60,10 @@ export class ModalDocsComponent {
 
   toggleWaitModal(event) {
     this.waitVisible = !this.waitVisible;
+
+    setTimeout(() => {
+      this.waitVisible = !this.waitVisible;
+    }, 3000)
   }
 
   toggleInfoModal(event) {

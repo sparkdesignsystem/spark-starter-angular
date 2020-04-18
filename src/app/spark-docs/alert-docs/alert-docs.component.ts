@@ -15,17 +15,7 @@ import { Component, OnInit } from '@angular/core';
 
     <div class="drizzle-o-ContentGrouping">
       <h2 class="drizzle-b-h2">
-        Success alert! Not dismissible!
-      </h2>
-
-      <sprk-alert alertType="success" [dismissible]="false" idString="alert-success-1" analyticsString="object.action.event">
-        Hello, World.
-      </sprk-alert>
-    </div>
-
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
-        Fail alert dismissible
+        Fail alert
       </h2>
 
       <sprk-alert alertType="fail" [dismissible]="true" idString="alert-fail-1" analyticsString="object.action.event">
@@ -35,18 +25,28 @@ import { Component, OnInit } from '@angular/core';
 
     <div class="drizzle-o-ContentGrouping">
       <h2 class="drizzle-b-h2">
-        Success alert dismissible
+        Success alert
       </h2>
 
       <sprk-alert alertType="success" [dismissible]="true" idString="alert-success-2" analyticsString="object.action.event">
         Hello, World. I'm dismissible!
       </sprk-alert>
     </div>
+
+    <div class="drizzle-o-ContentGrouping">
+      <h2 class="drizzle-b-h2">
+        Not Dismissible
+      </h2>
+
+      <sprk-alert alertType="success" [dismissible]="false" idString="alert-success-1" analyticsString="object.action.event">
+        Hello, World.
+      </sprk-alert>
+    </div>
   `,
   styles: ['']
 })
 export class AlertDocsComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

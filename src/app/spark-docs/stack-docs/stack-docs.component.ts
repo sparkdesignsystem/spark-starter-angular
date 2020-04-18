@@ -41,12 +41,12 @@ import { Component } from '@angular/core';
           cardType="teaser"
           title="Test Card for Stack!"
           body="Placeholder text that is here in this card!"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="Placeholder Image Alt Text"
-          imgHref="www.sparkdesignsystem.com"
+          imgHref="http://www.sparkdesignsystem.com"
           ctaType="button"
           ctaText="Neat!"
-          ctaHref="www.sparkdesignsystem.com"
+          ctaHref="http://www.sparkdesignsystem.com"
           ctaAnalytics="Link: Spark"
         >
         </sprk-card>
@@ -57,12 +57,12 @@ import { Component } from '@angular/core';
           cardType="teaser"
           title="Spark Design System"
           body="Placeholder text that is here in this card!"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="Placeholder Image Alt Text"
-          imgHref="www.sparkdesignsystem.com"
+          imgHref="http://www.sparkdesignsystem.com"
           ctaType="button"
           ctaText="Neat!"
-          ctaHref="www.sparkdesignsystem.com"
+          ctaHref="http://www.sparkdesignsystem.com"
           ctaAnalytics="Link: Spark"
         >
         </sprk-card>
@@ -73,12 +73,12 @@ import { Component } from '@angular/core';
           cardType="teaser"
           title="Spark Cards in a Stack Component"
           body="Placeholder text that is here in this card!"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="Placeholder Image Alt Text"
-          imgHref="www.sparkdesignsystem.com"
+          imgHref="http://www.sparkdesignsystem.com"
           ctaType="button"
           ctaText="Neat!"
-          ctaHref="www.sparkdesignsystem.com"
+          ctaHref="http://www.sparkdesignsystem.com"
           ctaAnalytics="Link: Spark"
         >
         </sprk-card>

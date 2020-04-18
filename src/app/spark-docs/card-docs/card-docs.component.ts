@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
           <img
             class="sprk-c-Card__media"
             alt="Spark placeholder image."
-            src="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            src="https://spark-assets.netlify.app/desktop.jpg"
           />
         </a>
         <div
@@ -39,7 +39,7 @@ import { Component } from '@angular/core';
       <sprk-card
         cardType="teaser"
         media="img"
-        imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+        imgSrc="https://spark-assets.netlify.app/desktop.jpg"
         body="This Lorem ipsum dolor sit amet, doctus invenire vix te. Facilisi perpetua an pri, errem commune
                    mea at, mei prima tantas signiferumque at. Numquam."
         ctaType="button"
@@ -61,7 +61,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix te.
                        Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -77,7 +77,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -102,7 +102,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -118,7 +118,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -134,7 +134,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -159,7 +159,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix te.
                        Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -175,7 +175,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -191,7 +191,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -207,7 +207,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"

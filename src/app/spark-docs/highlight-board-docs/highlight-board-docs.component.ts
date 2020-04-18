@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
           ctaHref="https://sparkdesignsystem.com/"
           ctaText2="Developers"
           ctaHref2="https://sparkdesignsystem.com/"
-          imgSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="placeholder"
           idString="highlightboard-1"
         >
@@ -27,7 +27,7 @@ import { Component } from '@angular/core';
 
         <sprk-highlight-board
           heading="Highlight Board Heading Example"
-          imgSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="placeholder"
           idString="highlightboard-2"
         >
@@ -58,7 +58,7 @@ import { Component } from '@angular/core';
           heading="Highlight Board Heading Example"
           ctaText="Learn More"
           type="stacked"
-          imgSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="placeholder"
           idString="highlightboard-4"
         >
@@ -75,7 +75,7 @@ import { Component } from '@angular/core';
         ctaHref="https://sparkdesignsystem.com/"
         ctaText2="Developers"
         ctaHref2="https://sparkdesignsystem.com/"
-        imgSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+        imgSrc="https://spark-assets.netlify.app/desktop.jpg"
         imgAlt="placeholder"
         idString="highlightboard-5"
         additionalClasses="sprk-u-FullWidth"

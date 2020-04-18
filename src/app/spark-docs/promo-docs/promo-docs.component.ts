@@ -30,7 +30,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
         <sprk-promo
           isFlag="true"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
+          imgSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgAlt="Spark Design System Logo"
           idString="promo-2"
         >
@@ -49,8 +49,8 @@ import { RouterTestingModule } from '@angular/router/testing';
           title="Title"
           subtitle="Subtitle"
           media="img"
-          imgAlt="placeholder"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/flower.jpg"
+          imgAlt="A yellow flower"
+          imgSrc="https://spark-assets.netlify.app/flower.jpg"
           cta="button"
           ctaText="Learn More"
           idString="promo-3"
@@ -70,8 +70,8 @@ import { RouterTestingModule } from '@angular/router/testing';
           title="Title"
           subtitle="Subtitle"
           mediaRev="true"
-          imgAlt="placeholder"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/flower.jpg"
+          imgAlt="A yellow flower"
+          imgSrc="https://spark-assets.netlify.app/flower.jpg"
           imgHref="https://sparkdesignsystem.com"
           cta="button"
           ctaText="Learn More"
