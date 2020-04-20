@@ -13,10 +13,13 @@ import { AccordionDocsComponent } from './spark-docs/accordion-docs/accordion-do
 import { AlertDocsComponent } from './spark-docs/alert-docs/alert-docs.component';
 import { AwardDocsComponent } from './spark-docs/award-docs/award-docs.component';
 import { ButtonDocsComponent } from './spark-docs/button-docs/button-docs.component';
+import { BoxDocsComponent } from './spark-docs/box-docs/box-docs.component';
 import { CardDocsComponent } from './spark-docs/card-docs/card-docs.component';
+import { CenteredColumnDocsComponent } from './spark-docs/centered-column-docs/centered-column-docs.component';
 import { DictionaryDocsComponent } from './spark-docs/dictionary-docs/dictionary-docs.component';
 import { DividerDocsComponent } from './spark-docs/divider-docs/divider-docs.component';
 import { DropdownDocsComponent } from './spark-docs/dropdown-docs/dropdown-docs.component';
+import { FlagDocsComponent } from './spark-docs/flag-docs/flag-docs.component';
 import { FooterDocsComponent } from './spark-docs/footer-docs/footer-docs.component';
 import { HighlightBoardDocsComponent } from './spark-docs/highlight-board-docs/highlight-board-docs.component';
 import { IconSetDocsComponent } from './spark-docs/icon-set-docs/icon-set-docs.component';
@@ -39,6 +42,8 @@ import { ToggleDocsComponent } from './spark-docs/toggle-docs/toggle-docs.compon
 const appRoutes: Routes = [
   { path: 'alerts', component: AlertDocsComponent },
   { path: 'cards', component: CardDocsComponent },
+  { path: 'centered-column', component: CenteredColumnDocsComponent },
+  { path: 'box', component: BoxDocsComponent },
   { path: 'icons', component: IconSetDocsComponent },
   { path: 'buttons', component: ButtonDocsComponent },
   { path: 'links', component: LinkDocsComponent },
@@ -52,6 +57,7 @@ const appRoutes: Routes = [
   { path: 'inputs', component: InputDocsComponent },
   { path: 'stack', component: StackDocsComponent },
   { path: 'promo', component: PromoDocsComponent },
+  { path: 'flag', component: FlagDocsComponent },
   { path: 'footer', component: FooterDocsComponent },
   { path: 'award', component: AwardDocsComponent },
   { path: 'toggle', component: ToggleDocsComponent },
@@ -71,6 +77,8 @@ const appRoutes: Routes = [
     AccordionDocsComponent,
     ButtonDocsComponent,
     CardDocsComponent,
+    BoxDocsComponent,
+    CenteredColumnDocsComponent,
     PageNotFoundComponent,
     IntroDocsComponent,
     LinkDocsComponent,
@@ -86,6 +94,7 @@ const appRoutes: Routes = [
     StackDocsComponent,
     PromoDocsComponent,
     AwardDocsComponent,
+    FlagDocsComponent,
     FooterDocsComponent,
     ToggleDocsComponent,
     TableDocsComponent,
