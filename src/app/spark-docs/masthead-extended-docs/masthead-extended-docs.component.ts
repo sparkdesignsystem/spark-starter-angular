@@ -204,13 +204,6 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <sprk-alert
-          alertType="info"
-          idString="alert-info-1"
-          analyticsString="object.action.event"
-        >
-          This is an info Spark alert!
-        </sprk-alert>
         <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
