@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { SparkAngularModule } from '../../../../dist/spark-angular/lib/spark-angular.module';
+import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 import { DropdownDocsComponent } from './dropdown-docs.component';
 
 describe('DropdownDocsComponent', () => {

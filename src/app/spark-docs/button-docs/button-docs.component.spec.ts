@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { SparkAngularModule } from '../../spark-angular/spark-angular.module';
+import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 import { ButtonDocsComponent } from './button-docs.component';
 
 describe('ButtonDocsComponent', () => {
@@ -23,18 +23,5 @@ describe('ButtonDocsComponent', () => {
 
   it('should create itself', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('should add a spinner when the spinner button is clicked', () => {
-    spinnerButtonElement.click();
-    expect(spinnerButtonElement.querySelector('.sprk-c-Spinner')).toBeTruthy();
-  });
-
-  it('should not add another spinner if its already spinning', () => {
-    spinnerButtonElement.click();
-    spinnerButtonElement.click();
-    expect(
-      spinnerButtonElement.querySelectorAll('.sprk-c-Spinner').length
-    ).toBe(1);
   });
 });

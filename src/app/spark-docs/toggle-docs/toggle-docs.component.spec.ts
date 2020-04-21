@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { SparkAngularModule } from '../../spark-angular/spark-angular.module';
+import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 import { ToggleDocsComponent } from './toggle-docs.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 describe('ToggleDocsComponent', () => {
   let component: ToggleDocsComponent;
@@ -8,7 +10,7 @@ describe('ToggleDocsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [SparkAngularModule],
+      imports: [SparkAngularModule, BrowserAnimationsModule],
       declarations: [ToggleDocsComponent]
     }).compileComponents();
   }));

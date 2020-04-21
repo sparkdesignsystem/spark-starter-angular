@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
-import { SparkAngularModule } from '../../spark-angular/spark-angular.module';
+import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 import { InputDocsComponent } from './input-docs.component';
 
 describe('InputDocsComponent', () => {
@@ -38,11 +38,5 @@ describe('InputDocsComponent', () => {
     expect(component.ssnType).toEqual('text');
     component.toggleSSNType();
     expect(component.ssnType).toEqual('password');
-  });
-
-  it('should set form_submitted when onSubmit is called', () => {
-    component.form_submitted = false;
-    component.onSubmit(event);
-    expect(component.form_submitted).toEqual(true);
   });
 });
