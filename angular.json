@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spark-starter-angular"
+    }
+  },
+  "defaultProject": "spark-starter-angular",
+  "cli": {
+    "analytics": false
+  }
 }
