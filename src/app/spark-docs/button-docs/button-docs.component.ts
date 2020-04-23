@@ -30,12 +30,10 @@ import { setSpinning } from '@sparkdesignsystem/spark';
     </div>
   `
 })
-export class ButtonDocsComponent implements OnInit {
+export class ButtonDocsComponent {
   constructor() {}
 
   submitSpinning = false;
-
-  ngOnInit() {}
 
   checkSpinner(event): void {
     if (!this.submitSpinning) {

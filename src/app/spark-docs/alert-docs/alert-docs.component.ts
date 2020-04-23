@@ -45,8 +45,6 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: ['']
 })
-export class AlertDocsComponent implements OnInit {
+export class AlertDocsComponent {
   constructor() { }
-
-  ngOnInit() { }
 }

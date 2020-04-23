@@ -133,8 +133,6 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: ['']
 })
-export class LinkDocsComponent implements OnInit {
+export class LinkDocsComponent {
   constructor() {}
-
-  ngOnInit() {}
 }

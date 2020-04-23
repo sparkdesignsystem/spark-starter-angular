@@ -127,8 +127,6 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: ['']
 })
-export class AwardDocsComponent implements OnInit {
+export class AwardDocsComponent {
   constructor() {}
-
-  ngOnInit() {}
 }

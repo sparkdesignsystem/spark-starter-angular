@@ -185,7 +185,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: ['']
 })
-export class PaginationDocsComponent implements OnInit {
+export class PaginationDocsComponent {
   constructor() {}
 
   runConfig = {
@@ -246,6 +246,4 @@ export class PaginationDocsComponent implements OnInit {
       return time.toFixed(2) + ' Hour(s)';
     }
   }
-
-  ngOnInit() {}
 }
