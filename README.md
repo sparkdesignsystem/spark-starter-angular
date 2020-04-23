@@ -15,4 +15,4 @@ This repository includes all of the prequisites for a Spark Angular installation
 
 ## Next Steps
 
-Check out the **Spark Installation Guide for Angular**. (link coming soon)
+Check out our guide for [Installing Spark in an Angular Project](https://sparkdesignsystem.com/installing-spark/angular).
