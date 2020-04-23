@@ -1,20 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
-import { AlertDocsComponent } from './alert-docs.component';
+import { FlagDocsComponent } from './flag-docs.component';
 
-describe('AlertDocsComponent', () => {
-  let component: AlertDocsComponent;
-  let fixture: ComponentFixture<AlertDocsComponent>;
+describe('FlagDocsComponent', () => {
+  let component: FlagDocsComponent;
+  let fixture: ComponentFixture<FlagDocsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [SparkAngularModule],
-      declarations: [AlertDocsComponent]
+      imports: [SparkAngularModule, FormsModule],
+      declarations: [FlagDocsComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AlertDocsComponent);
+    fixture = TestBed.createComponent(FlagDocsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

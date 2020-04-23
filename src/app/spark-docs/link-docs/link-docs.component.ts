@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'sprk-link-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">External Links</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">External Links</h2>
 
       <sprk-link href="https://www.google.com" additionalClasses="sprk-u-mrm"
         >https://www.google.com</sprk-link
@@ -12,8 +12,8 @@ import { Component, OnInit } from '@angular/core';
       <sprk-link href="http://www.google.com">http://www.google.com</sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Same Page Links</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Same Page Links</h2>
 
       <sprk-link href="#info" additionalClasses="sprk-u-mrm"
         >Jump Link</sprk-link
@@ -23,32 +23,32 @@ import { Component, OnInit } from '@angular/core';
       >
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Link with no href provided</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Link with no href provided</h2>
 
       <sprk-link>No href provided.</sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Link Using External Input</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Link Using External Input</h2>
 
       <sprk-link href="tel:+123456789" isExternal="true"> Spark </sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Link Using tel</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Link Using tel</h2>
 
       <sprk-link href="tel:+123456789"> Tel Link </sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Link Using mailto</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Link Using mailto</h2>
 
       <sprk-link href="mailto:example@example.com"> mailto Link </sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Link</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Link</h2>
 
       <sprk-link
         href="/alerts"
@@ -73,8 +73,8 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Simple Link</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Simple Link</h2>
 
       <sprk-link
         linkType="simple"
@@ -86,8 +86,8 @@ import { Component, OnInit } from '@angular/core';
       </sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Additional Classes</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Additional Classes</h2>
 
       <sprk-link
         additionalClasses="sprk-u-mbm"
@@ -99,8 +99,8 @@ import { Component, OnInit } from '@angular/core';
       </sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Disabled Link</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Disabled Link</h2>
 
       <sprk-link
         isDisabled="true"
@@ -112,8 +112,8 @@ import { Component, OnInit } from '@angular/core';
       </sprk-link>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Icon With Text Link</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Icon With Text Link</h2>
 
       <sprk-link
         linkType="icon"
@@ -133,8 +133,6 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: ['']
 })
-export class LinkDocsComponent implements OnInit {
+export class LinkDocsComponent {
   constructor() {}
-
-  ngOnInit() {}
 }

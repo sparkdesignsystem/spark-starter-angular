@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { SparkAngularModule } from '../../spark-angular/spark-angular.module';
+import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 import { DictionaryDocsComponent } from './dictionary-docs.component';
 
 describe('DictionaryDocsComponent', () => {

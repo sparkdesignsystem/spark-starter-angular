@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'sprk-award-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbm">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbm">
         Award split at small breakpoint
       </h2>
 
@@ -13,12 +13,12 @@ import { Component, OnInit } from '@angular/core';
         <sprk-award
           splitAt="small"
           title="Spark Award Component"
-          imgOneSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgTwoSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgOneAlt="placeholder!"
+          imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgOneAlt="Spark Design System Logo"
           imgOneHref="https://www.sparkdesignsystem.com/"
           imgTwoHref="https://www.sparkdesignsystem.com/"
-          imgTwoAlt="placeholder!"
+          imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
           analyticsStringImgOne="Foo"
@@ -28,8 +28,8 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbm">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbm">
         Award split at medium breakpoint
       </h2>
 
@@ -37,12 +37,12 @@ import { Component, OnInit } from '@angular/core';
         <sprk-award
           splitAt="medium"
           title="Spark Award Component"
-          imgOneSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgTwoSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgOneAlt="placeholder!"
+          imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgOneAlt="Spark Design System Logo"
           imgOneHref="https://www.sparkdesignsystem.com/"
           imgTwoHref="https://www.sparkdesignsystem.com/"
-          imgTwoAlt="placeholder!"
+          imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
           analyticsStringImgOne="Foo"
@@ -52,8 +52,8 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbm">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbm">
         Award split at large breakpoint
       </h2>
 
@@ -61,12 +61,12 @@ import { Component, OnInit } from '@angular/core';
         <sprk-award
           splitAt="large"
           title="Spark Award Component"
-          imgOneSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgTwoSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgOneAlt="placeholder!"
+          imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgOneAlt="Spark Design System Logo"
           imgOneHref="https://www.sparkdesignsystem.com/"
           imgTwoHref="https://www.sparkdesignsystem.com/"
-          imgTwoAlt="placeholder!"
+          imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
           analyticsStringImgOne="Foo"
@@ -76,8 +76,8 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbm">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbm">
         Award split at huge breakpoint
       </h2>
 
@@ -85,12 +85,12 @@ import { Component, OnInit } from '@angular/core';
         <sprk-award
           splitAt="huge"
           title="Spark Award Component"
-          imgOneSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgTwoSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgOneAlt="placeholder!"
+          imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgOneAlt="Spark Design System Logo"
           imgOneHref="https://www.sparkdesignsystem.com/"
           imgTwoHref="https://www.sparkdesignsystem.com/"
-          imgTwoAlt="placeholder!"
+          imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
           analyticsStringImgOne="Foo"
@@ -100,8 +100,8 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbm">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbm">
         Award With Disclaimer set to false
       </h2>
 
@@ -110,12 +110,12 @@ import { Component, OnInit } from '@angular/core';
           disclaimer="false"
           splitAt="huge"
           title="Spark Award Component"
-          imgOneSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgTwoSrc="https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
-          imgOneAlt="placeholder!"
+          imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
+          imgOneAlt="Spark Design System Logo"
           imgOneHref="https://www.sparkdesignsystem.com/"
           imgTwoHref="https://www.sparkdesignsystem.com/"
-          imgTwoAlt="placeholder!"
+          imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
           analyticsStringImgOne="Foo"
@@ -127,8 +127,6 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: ['']
 })
-export class AwardDocsComponent implements OnInit {
+export class AwardDocsComponent {
   constructor() {}
-
-  ngOnInit() {}
 }

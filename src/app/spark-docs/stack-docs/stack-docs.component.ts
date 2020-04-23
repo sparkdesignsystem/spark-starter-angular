@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-stack-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbl">Stack With Buttons</h2>
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbl">Stack With Buttons</h2>
 
       <sprk-stack itemSpacing="medium">
         <button sprkButton sprkStackItem>Hello, World.</button>
@@ -14,8 +14,8 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbl">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbl">
         Stack With Buttons, Side by Side at Medium breakpoint, Huge size spacing
       </h2>
 
@@ -31,8 +31,8 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbl">Stack With Three Cards</h2>
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbl">Stack With Three Cards</h2>
 
       <sprk-stack itemSpacing="huge" splitAt="large">
         <sprk-card
@@ -41,12 +41,12 @@ import { Component } from '@angular/core';
           cardType="teaser"
           title="Test Card for Stack!"
           body="Placeholder text that is here in this card!"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="Placeholder Image Alt Text"
-          imgHref="www.sparkdesignsystem.com"
+          imgHref="http://www.sparkdesignsystem.com"
           ctaType="button"
           ctaText="Neat!"
-          ctaHref="www.sparkdesignsystem.com"
+          ctaHref="http://www.sparkdesignsystem.com"
           ctaAnalytics="Link: Spark"
         >
         </sprk-card>
@@ -57,12 +57,12 @@ import { Component } from '@angular/core';
           cardType="teaser"
           title="Spark Design System"
           body="Placeholder text that is here in this card!"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="Placeholder Image Alt Text"
-          imgHref="www.sparkdesignsystem.com"
+          imgHref="http://www.sparkdesignsystem.com"
           ctaType="button"
           ctaText="Neat!"
-          ctaHref="www.sparkdesignsystem.com"
+          ctaHref="http://www.sparkdesignsystem.com"
           ctaAnalytics="Link: Spark"
         >
         </sprk-card>
@@ -73,20 +73,20 @@ import { Component } from '@angular/core';
           cardType="teaser"
           title="Spark Cards in a Stack Component"
           body="Placeholder text that is here in this card!"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+          imgSrc="https://spark-assets.netlify.app/desktop.jpg"
           imgAlt="Placeholder Image Alt Text"
-          imgHref="www.sparkdesignsystem.com"
+          imgHref="http://www.sparkdesignsystem.com"
           ctaType="button"
           ctaText="Neat!"
-          ctaHref="www.sparkdesignsystem.com"
+          ctaHref="http://www.sparkdesignsystem.com"
           ctaAnalytics="Link: Spark"
         >
         </sprk-card>
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Stack With Two Equal Width Cols, Split At Tiny
       </h2>
 
@@ -129,8 +129,8 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2 sprk-u-mbl">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2 sprk-u-mbl">
         Stack With Four Cols at Tiny Breakpoint
       </h2>
       <sprk-stack splitAt="tiny">
@@ -141,16 +141,16 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Stack With Two Cols at Large Breakpoint</h2>
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2">Stack With Two Cols at Large Breakpoint</h2>
       <sprk-stack splitAt="large">
         <div sprkStackItem class="sprk-o-Stack__item--half@l">Tests</div>
         <div sprkStackItem class="sprk-o-Stack__item--half@l">Tests</div>
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Stack With Three Cols at Medium Breakpoint</h2>
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2">Stack With Three Cols at Medium Breakpoint</h2>
 
       <sprk-stack splitAt="medium">
         <div sprkStackItem class="sprk-o-Stack__item--third@m sprk-u-pam">
@@ -170,8 +170,8 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
+      <h2 class="sprk-demo-b-h2">
         Stack With Six Cols at Extra Large Breakpoint
       </h2>
 

@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-stepper-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Stepper</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Stepper</h2>
 
       <sprk-stepper idString="stepper-1">
         <sprk-stepper-step heading="Step One"></sprk-stepper-step>
@@ -18,8 +18,8 @@ import { Component } from '@angular/core';
       </sprk-stepper>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Stepper With Descriptions</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Stepper With Descriptions</h2>
 
       <sprk-stepper idString="stepper-1">
         <sprk-stepper-step
@@ -46,8 +46,8 @@ import { Component } from '@angular/core';
       </sprk-stepper>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Stepper With Dark Background</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Stepper With Dark Background</h2>
 
       <div class="sprk-u-BackgroundColor--blue sprk-o-Box">
         <sprk-stepper idString="stepper-2" hasDarkBg="true">

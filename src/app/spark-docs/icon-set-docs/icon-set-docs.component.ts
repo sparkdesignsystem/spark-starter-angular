@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'sprk-icon-set-docs',
   template: `
     <div
-      class="drizzle-o-ContentGrouping"
+      class="sprk-demo-o-ContentGrouping"
       *ngFor="let icon of icons; index as i"
     >
-      <h2 class="drizzle-b-h2">{{ icon }}</h2>
+      <h2 class="sprk-demo-b-h2">{{ icon }}</h2>
       <sprk-icon
         iconType="{{ icon }}"
         additionalClasses=""

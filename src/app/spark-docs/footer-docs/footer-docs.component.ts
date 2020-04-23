@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'sprk-footer-docs',
   template: `
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer Without Global Section</h2>
+      <h2 class="sprk-demo-b-h2">Footer Without Global Section</h2>
 
       <sprk-footer
         idString="footer-1"
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer With Global Section</h2>
+      <h2 class="sprk-demo-b-h2">Footer With Global Section</h2>
 
       <sprk-footer
         idString="footer-2"
@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer Without Social Links</h2>
+      <h2 class="sprk-demo-b-h2">Footer Without Social Links</h2>
 
       <sprk-footer
         idString="footer-3"
@@ -54,7 +54,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer Without Badge Links</h2>
+      <h2 class="sprk-demo-b-h2">Footer Without Badge Links</h2>
 
       <sprk-footer
         idString="footer-4"
@@ -71,7 +71,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer Without Awards</h2>
+      <h2 class="sprk-demo-b-h2">Footer Without Awards</h2>
 
       <sprk-footer
         idString="footer-5"
@@ -86,7 +86,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer Without Disclaimer Toggle And Award</h2>
+      <h2 class="sprk-demo-b-h2">Footer Without Disclaimer Toggle And Award</h2>
 
       <sprk-footer
         idString="footer-6"
@@ -100,7 +100,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="sprk-u-mbh">
-      <h2 class="drizzle-b-h2">Footer With Two Columns of Local Links</h2>
+      <h2 class="sprk-demo-b-h2">Footer With Two Columns of Local Links</h2>
 
       <sprk-footer
         idString="footer-7"
@@ -134,7 +134,7 @@ export class FooterDocsComponent {
       text: 'Lorem ipsum dolor sit amet, consectetur.',
       href: '/global-2',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
       imgCSS: 'sprk-u-Width-20',
       imgAlt: 'Foo',
       analytics: 'link-2'
@@ -143,7 +143,7 @@ export class FooterDocsComponent {
       text: 'Lorem ipsum dolor sit amet, consectetur.',
       href: '/global-3',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
       imgCSS: 'sprk-u-Width-20',
       imgAlt: 'Foo',
       analytics: 'link-2'
@@ -358,16 +358,16 @@ export class FooterDocsComponent {
     {
       href: '/awards-1',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
-      imgCSS: 'drizzle-c-Logo-placeholder drizzle-c-Logo-placeholder--large',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
+      imgCSS: 'sprk-demo-c-Logo-placeholder sprk-demo-c-Logo-placeholder--large',
       imgAlt: 'Foo',
       analytics: 'link-1'
     },
     {
       href: '/awards-2',
       imgSrc:
-        'https://staging.sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg',
-      imgCSS: 'drizzle-c-Logo-placeholder drizzle-c-Logo-placeholder--large',
+        'https://spark-assets.netlify.app/spark-placeholder.jpg',
+      imgCSS: 'sprk-demo-c-Logo-placeholder sprk-demo-c-Logo-placeholder--large',
       imgAlt: 'Foo',
       analytics: 'link-2'
     }

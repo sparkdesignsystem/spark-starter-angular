@@ -4,9 +4,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 @Component({
   selector: 'sprk-promo-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Promo Base</h2>
+        <h2 class="sprk-demo-b-h2">Promo Base</h2>
 
         <sprk-promo
           title="Title"
@@ -24,13 +24,13 @@ import { RouterTestingModule } from '@angular/router/testing';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Flag Promo</h2>
+        <h2 class="sprk-demo-b-h2">Flag Promo</h2>
 
         <sprk-promo
           isFlag="true"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/spark-placeholder.jpg"
+          imgSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgAlt="Spark Design System Logo"
           idString="promo-2"
         >
@@ -41,16 +41,16 @@ import { RouterTestingModule } from '@angular/router/testing';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Promo With Image</h2>
+        <h2 class="sprk-demo-b-h2">Promo With Image</h2>
 
         <sprk-promo
           title="Title"
           subtitle="Subtitle"
           media="img"
-          imgAlt="placeholder"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/flower.jpg"
+          imgAlt="A yellow flower"
+          imgSrc="https://spark-assets.netlify.app/flower.jpg"
           cta="button"
           ctaText="Learn More"
           idString="promo-3"
@@ -62,16 +62,16 @@ import { RouterTestingModule } from '@angular/router/testing';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping sprk-u-mbh">
+    <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Promo With Reversed Image</h2>
+        <h2 class="sprk-demo-b-h2">Promo With Reversed Image</h2>
 
         <sprk-promo
           title="Title"
           subtitle="Subtitle"
           mediaRev="true"
-          imgAlt="placeholder"
-          imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/flower.jpg"
+          imgAlt="A yellow flower"
+          imgSrc="https://spark-assets.netlify.app/flower.jpg"
           imgHref="https://sparkdesignsystem.com"
           cta="button"
           ctaText="Learn More"

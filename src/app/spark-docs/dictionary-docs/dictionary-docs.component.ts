@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-dictionary-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Dictionary
       </h2>
 
       <sprk-dictionary [data]="keyValuePairs" idString="dictionary-1"></sprk-dictionary>
 
-      <h2 class="drizzle-b-h2">
+      <h2 class="sprk-demo-b-h2">
         Striped Dictionary
       </h2>
 

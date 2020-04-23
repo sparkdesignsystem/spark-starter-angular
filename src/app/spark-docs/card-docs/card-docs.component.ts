@@ -3,22 +3,22 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-card-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Base</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Base</h2>
       <sprk-card cardType="base" idString="card-1">
         <div
           class="sprk-o-Stack__item sprk-c-Card__content sprk-o-Stack sprk-o-Stack--medium"
         ></div>
       </sprk-card>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Sample Card</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Sample Card</h2>
       <sprk-card cardType="base">
         <a href="#" class="sprk-o-Stack__item">
           <img
             class="sprk-c-Card__media"
             alt="Spark placeholder image."
-            src="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            src="https://spark-assets.netlify.app/desktop.jpg"
           />
         </a>
         <div
@@ -34,12 +34,12 @@ import { Component } from '@angular/core';
         </div>
       </sprk-card>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Teaser Card</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Teaser Card</h2>
       <sprk-card
         cardType="teaser"
         media="img"
-        imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+        imgSrc="https://spark-assets.netlify.app/desktop.jpg"
         body="This Lorem ipsum dolor sit amet, doctus invenire vix te. Facilisi perpetua an pri, errem commune
                    mea at, mei prima tantas signiferumque at. Numquam."
         ctaType="button"
@@ -47,8 +47,8 @@ import { Component } from '@angular/core';
         title="Title"
       ></sprk-card>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Two-Up</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Two-Up</h2>
       <sprk-stack
         itemSpacing="large"
         splitAt="large"
@@ -61,7 +61,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix te.
                        Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -77,7 +77,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -88,8 +88,8 @@ import { Component } from '@angular/core';
         </div>
       </sprk-stack>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Three-Up</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Three-Up</h2>
       <sprk-stack
         itemSpacing="large"
         splitAt="large"
@@ -102,7 +102,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -118,7 +118,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -134,7 +134,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -145,8 +145,8 @@ import { Component } from '@angular/core';
         </div>
       </sprk-stack>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Four-Up</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Four-Up</h2>
       <sprk-stack
         itemSpacing="large"
         splitAt="large"
@@ -159,7 +159,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix te.
                        Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -175,7 +175,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -191,7 +191,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -207,7 +207,7 @@ import { Component } from '@angular/core';
           <sprk-card
             cardType="teaser"
             media="img"
-            imgSrc="https://sparkdesignsystem.com/assets/toolkit/images/desktop.jpg"
+            imgSrc="https://spark-assets.netlify.app/desktop.jpg"
             body="This Lorem ipsum dolor sit amet, doctus invenire vix
                        te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam."
             ctaType="button"
@@ -219,8 +219,8 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Standout Card</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Standout Card</h2>
       <sprk-card
         cardType="base"
         idString="card-20"
@@ -232,8 +232,8 @@ import { Component } from '@angular/core';
       </sprk-card>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Standout Card Highlighted Header</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Standout Card Highlighted Header</h2>
       <sprk-card
         cardType="base"
         idString="card-12"

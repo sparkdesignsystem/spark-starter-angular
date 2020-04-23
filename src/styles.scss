@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 $sprk-using-webfonts: true;
 $sprk-webfonts:
   ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Bold.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Bold.woff') format('woff')), RocketSans, 700),
@@ -8,19 +7,8 @@ $sprk-webfonts:
 
 @import "node_modules/@sparkdesignsystem/spark/spark.scss";
 
-.sprk-c-Masthead__big-nav-items {
-  flex-wrap: wrap;
-}
+$app-namespace: 'sprk-demo';
 
-.sprk-c-Masthead__content {
-  display: none;
-}
-
-$app-namespace: 'drizzle';
-
-//
-// React site specific styling
-//
 .#{$app-namespace}-b-h1 {
   content: "";
     width: 32px;
@@ -29,7 +17,6 @@ $app-namespace: 'drizzle';
 }
 
 .#{$app-namespace}-b-h2 {
-  // color: $drizzle-black;
   font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -38,12 +25,11 @@ $app-namespace: 'drizzle';
   margin-top: 1.5rem;
 }
 
-.#{$app-namespace}-c-AngularHeader {
-  position: static;
+.#{$app-namespace}-c-AngularHeader a {
+  text-decoration: none;
 }
 
 .#{$app-namespace}-c-AngularNav {
-  // background-color: $sprk-black;
   color: $sprk-white;
   width: 100%;
   padding: 0;
@@ -51,14 +37,31 @@ $app-namespace: 'drizzle';
 
 .#{$app-namespace}-c-AngularNav a {
   display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
   transition: all 0.3s ease-out;
-
+  background-color: $sprk-tab-navigation-btn-bg-color;
+  font-size: $sprk-font-size-body-one;
+  font-weight: $sprk-font-weight-body-one;
+  text-align: center;
+  text-decoration: none;
+  padding: $sprk-space-inset-short-s;
+  padding-top: $sprk-space-s;
+  padding-bottom: $sprk-space-s;
+  margin-bottom: $sprk-space-s;
+  border: 0;
+  border-top: $sprk-tab-navigation-btn-border-top;
+  color: $sprk-black;
 }
 
+.#{$app-namespace}-c-AngularNav a:hover,
+.#{$app-namespace}-c-AngularNav a:focus {
+  border-top: $sprk-tab-navigation-btn-hover-border-top;
+}
 
+.#{$app-namespace}-c-AngularNav__item--active {
+  background-color: $sprk-white;
+  border-top: $sprk-tab-navigation-btn-active-border-top;
+  color: $sprk-tab-navigation-btn-active-color;
+}
 
 .#{$app-namespace}-b-List {
   list-style-type: none;

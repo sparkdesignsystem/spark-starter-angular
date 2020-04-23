@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-list-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Bare List
       </h2>
 
@@ -18,8 +18,8 @@ import { Component } from '@angular/core';
       </sprk-unordered-list>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Indented List
       </h2>
 
@@ -33,8 +33,8 @@ import { Component } from '@angular/core';
       </sprk-unordered-list>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Unordered List
       </h2>
 
@@ -48,8 +48,8 @@ import { Component } from '@angular/core';
       </sprk-unordered-list>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Ordered List
       </h2>
 
