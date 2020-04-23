@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-highlight-board-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
+    <div class="sprk-demo-o-ContentGrouping">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Highlight Board Default</h2>
+        <h2 class="sprk-demo-b-h2">Highlight Board Default</h2>
 
         <sprk-highlight-board
           heading="Hello, Welcome To Spark Design System"
@@ -21,9 +21,9 @@ import { Component } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
+    <div class="sprk-demo-o-ContentGrouping">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Highlight Board Default 2</h2>
+        <h2 class="sprk-demo-b-h2">Highlight Board Default 2</h2>
 
         <sprk-highlight-board
           heading="Highlight Board Heading Example"
@@ -35,9 +35,9 @@ import { Component } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
+    <div class="sprk-demo-o-ContentGrouping">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Highlight Board With No Image</h2>
+        <h2 class="sprk-demo-b-h2">Highlight Board With No Image</h2>
 
         <sprk-highlight-board
           heading="Highlight Board Heading Example"
@@ -50,9 +50,9 @@ import { Component } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
+    <div class="sprk-demo-o-ContentGrouping">
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Highlight Board Stacked</h2>
+        <h2 class="sprk-demo-b-h2">Highlight Board Stacked</h2>
 
         <sprk-highlight-board
           heading="Highlight Board Heading Example"
@@ -66,8 +66,8 @@ import { Component } from '@angular/core';
       </div>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Highlight Board Full Width</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Highlight Board Full Width</h2>
 
       <sprk-highlight-board
         heading="Hello, Welcome To Spark"

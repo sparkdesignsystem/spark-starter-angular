@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-tables-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Column Comparison
       </h2>
 
@@ -40,8 +40,8 @@ import { Component } from '@angular/core';
         </tbody>
       </sprk-table>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Grouped Columns
       </h2>
 
@@ -90,8 +90,8 @@ import { Component } from '@angular/core';
         </tbody>
       </sprk-table>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Row Comparison
       </h2>
 

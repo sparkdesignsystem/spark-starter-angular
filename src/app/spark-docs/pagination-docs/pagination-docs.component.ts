@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'sprk-pagination-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Use Case
       </h2>
       <div class="sprk-u-AbsoluteCenter">
@@ -49,8 +49,8 @@ import { Component, OnInit } from '@angular/core';
 
     <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Default Pagination with 1-5 pages
       </h2>
 
@@ -102,8 +102,8 @@ import { Component, OnInit } from '@angular/core';
 
     <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Long Pagination with 1-5 pages
       </h2>
       <p class="sprk-u-mbm">
@@ -159,8 +159,8 @@ import { Component, OnInit } from '@angular/core';
 
     <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Pager
       </h2>
 
@@ -175,8 +175,8 @@ import { Component, OnInit } from '@angular/core';
 
     <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
         Minimum Configuration
       </h2>
 

@@ -3,16 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-card-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Base</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Base</h2>
       <sprk-card cardType="base" idString="card-1">
         <div
           class="sprk-o-Stack__item sprk-c-Card__content sprk-o-Stack sprk-o-Stack--medium"
         ></div>
       </sprk-card>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Sample Card</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Sample Card</h2>
       <sprk-card cardType="base">
         <a href="#" class="sprk-o-Stack__item">
           <img
@@ -34,8 +34,8 @@ import { Component } from '@angular/core';
         </div>
       </sprk-card>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Teaser Card</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Teaser Card</h2>
       <sprk-card
         cardType="teaser"
         media="img"
@@ -47,8 +47,8 @@ import { Component } from '@angular/core';
         title="Title"
       ></sprk-card>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Two-Up</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Two-Up</h2>
       <sprk-stack
         itemSpacing="large"
         splitAt="large"
@@ -88,8 +88,8 @@ import { Component } from '@angular/core';
         </div>
       </sprk-stack>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Three-Up</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Three-Up</h2>
       <sprk-stack
         itemSpacing="large"
         splitAt="large"
@@ -145,8 +145,8 @@ import { Component } from '@angular/core';
         </div>
       </sprk-stack>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Four-Up</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Four-Up</h2>
       <sprk-stack
         itemSpacing="large"
         splitAt="large"
@@ -219,8 +219,8 @@ import { Component } from '@angular/core';
       </sprk-stack>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Standout Card</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Standout Card</h2>
       <sprk-card
         cardType="base"
         idString="card-20"
@@ -232,8 +232,8 @@ import { Component } from '@angular/core';
       </sprk-card>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Standout Card Highlighted Header</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Standout Card Highlighted Header</h2>
       <sprk-card
         cardType="base"
         idString="card-12"

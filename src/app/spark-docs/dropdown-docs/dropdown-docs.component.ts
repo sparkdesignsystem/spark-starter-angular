@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-dropdown-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Base</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Base</h2>
       <sprk-dropdown
         dropdownType="base"
         title="My Choices"
@@ -14,8 +14,8 @@ import { Component } from '@angular/core';
         (choiceMade)="choiceHandler($event)"
       ></sprk-dropdown>
     </div>
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Informational</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Informational</h2>
       <sprk-dropdown
         dropdownType="informational"
         additionalTriggerClasses="sprk-b-Link--plain"
@@ -36,8 +36,8 @@ import { Component } from '@angular/core';
       </sprk-dropdown>
     </div>
 
-    <div class="drizzle-o-ContentGrouping">
-      <h2 class="drizzle-b-h2">Selctor Dropdown</h2>
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">Selctor Dropdown</h2>
 
       <div
         class="sprk-o-Stack sprk-o-Stack--center-column sprk-o-Stack--center-row"

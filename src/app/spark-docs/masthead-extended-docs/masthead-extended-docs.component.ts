@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sprk-masthead-extended-docs',
   template: `
-    <div class="drizzle-o-ContentGrouping">
+    <div class="sprk-demo-o-ContentGrouping">
       <sprk-masthead
         additionalClasses="angular-docs-u-Masthead-docs"
         [bigNavLinks]="links"
@@ -192,7 +192,7 @@ import { Component } from '@angular/core';
       </sprk-masthead>
 
       <div class="sprk-o-CenteredColumn">
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -204,7 +204,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -216,7 +216,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -228,7 +228,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -240,7 +240,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -252,7 +252,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -264,7 +264,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -276,7 +276,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -288,7 +288,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -300,7 +300,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -312,7 +312,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -324,7 +324,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -336,7 +336,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -348,7 +348,7 @@ import { Component } from '@angular/core';
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <h2 class="drizzle-b-h2">Masthead (Extended)</h2>
+        <h2 class="sprk-demo-b-h2">Masthead (Extended)</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
