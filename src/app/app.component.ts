@@ -105,6 +105,10 @@ export class AppComponent {
     {
       text: "Toggle",
       href: "/toggle"
+    },
+    {
+      text: "Tooltip",
+      href: "/tooltip"
     }
   ];
 
