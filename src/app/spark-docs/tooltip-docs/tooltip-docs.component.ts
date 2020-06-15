@@ -6,16 +6,16 @@ import { Component } from '@angular/core';
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Tooltip</h2>
 
-      We eat our own dogfood. We are the oven. Execution is genius. Do the right thing. WHAT is right thing. You'll see it when you believe it out of the right thing. No excuses. Responding with a penny saved is the right thing. Innovation is a sense of the ante to play. Obsessed with a better way.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
       <sprk-tooltip
         triggerIconType="question-filled"
         iconAdditionalClasses="sprk-c-Icon--filled"
       >
-        A penny saved is right, it's about WHO is the oven. We are everywhere around us.
+        Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id dee doo da fauxet la gigman roo.
       </sprk-tooltip>
 
-      It's not about WHAT is the oven. You'll see it out of urgency is worshipped. You'll see it when you believe it when you believe it out of the noise. Responding with finding a sense of the right thing. We are everywhere around us. Do the "they". You'll see it when you believe it when you believe it out of awareness. We are everywhere around us. A penny saved is right thing. WHO is the roast out of the noise.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </div>
   `
 })
