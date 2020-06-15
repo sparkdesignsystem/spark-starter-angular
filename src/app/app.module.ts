@@ -38,6 +38,7 @@ import { StackDocsComponent } from './spark-docs/stack-docs/stack-docs.component
 import { TabbedNavigationDocsComponent } from './spark-docs/tabbed-navigation-docs/tabbed-navigation-docs.component';
 import { TableDocsComponent } from './spark-docs/table-docs/table-docs.component';
 import { ToggleDocsComponent } from './spark-docs/toggle-docs/toggle-docs.component';
+import { TooltipDocsComponent } from './spark-docs/tooltip-docs/tooltip-docs.component';
 
 const appRoutes: Routes = [
   { path: 'alerts', component: AlertDocsComponent },
@@ -61,6 +62,7 @@ const appRoutes: Routes = [
   { path: 'footer', component: FooterDocsComponent },
   { path: 'award', component: AwardDocsComponent },
   { path: 'toggle', component: ToggleDocsComponent },
+  { path: 'tooltip', component: TooltipDocsComponent },
   { path: 'tables', component: TableDocsComponent },
   { path: 'tabbed-navigation', component: TabbedNavigationDocsComponent },
   { path: 'dictionary', component: DictionaryDocsComponent },
@@ -97,6 +99,7 @@ const appRoutes: Routes = [
     FlagDocsComponent,
     FooterDocsComponent,
     ToggleDocsComponent,
+    TooltipDocsComponent,
     TableDocsComponent,
     TabbedNavigationDocsComponent,
     DictionaryDocsComponent,
