@@ -4,38 +4,205 @@ import { FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'sprk-input-docs',
   template: `
-  <sprk-selection-container>
-    <label sprkLabel>
-      Checkbox Group Label
-    </label>
-
-    <sprk-selection-item-container>
-      <input type="checkbox" name="checkbox_input" [(ngModel)]="checkbox_input1" sprkSelectionInput
-        #checkboxInput1="ngModel" data-id="checkbox-1" id="checkbox-1" (change)="onSelect($event)">
-
-      <label for="checkbox-1" sprkSelectionLabel>
-        Checkbox Item 1
-      </label>
-    </sprk-selection-item-container>
-
-    <sprk-selection-item-container>
-      <input type="checkbox" name="checkbox_input" [(ngModel)]="checkbox_input2" sprkSelectionInput
-        #checkboxInput2="ngModel" data-id="checkbox-2" id="checkbox-2" (change)="onSelect($event)">
-
-      <label for="checkbox-2" sprkSelectionLabel>
+  <sprk-checkbox-group>
+    <fieldset sprkFieldset>
+      <legend sprkLegend>
+        Checkbox Group Label
+      </legend>
+      <sprk-checkbox-item>
+        <input
+          type="checkbox"
+          value="1"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input1"
+          sprkCheckboxInput
+          #checkboxInput1="ngModel"
+          data-id="checkbox-1"
+          id="checkbox-1"
+        >
+        <label
+          for="checkbox-1"
+          sprkCheckboxLabel
+        >
+          Checkbox Item 1
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item>
+        <input
+          type="checkbox"
+          value="2"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input2"
+          sprkCheckboxInput
+          #checkboxInput2="ngModel"
+          data-id="checkbox-2"
+          id="checkbox-2"
+        >
+        <label
+          for="checkbox-2"
+          sprkCheckboxLabel
+        >
         Checkbox Item 2
-      </label>
-    </sprk-selection-item-container>
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item>
+        <input
+          type="checkbox"
+          value="3"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input3"
+          sprkCheckboxInput
+          #checkboxInput3="ngModel"
+          data-id="checkbox-3"
+          id="checkbox-3"
+        >
+        <label
+          for="checkbox-3"
+          sprkCheckboxLabel
+        >
+          Checkbox Item 3
+        </label>
+      </sprk-checkbox-item>
+    </fieldset>
+  </sprk-checkbox-group>
 
-    <sprk-selection-item-container>
-      <input type="checkbox" name="checkbox_input" [(ngModel)]="checkbox_input3" sprkSelectionInput
-        #checkboxInput3="ngModel" data-id="checkbox-3" id="checkbox-3" (change)="onSelect($event)">
 
-      <label for="checkbox-3" sprkSelectionLabel>
-        Checkbox Item 3
-      </label>
-    </sprk-selection-item-container>
-  </sprk-selection-container>
+  <sprk-checkbox-group>
+    <fieldset sprkFieldset>
+      <legend sprkLegend isDisabled="true">
+        Checkbox Group Label
+      </legend>
+      <sprk-checkbox-item>
+        <input
+          type="checkbox"
+          value="1"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input4"
+          sprkCheckboxInput
+          #checkboxInput4="ngModel"
+          data-id="checkbox-4"
+          id="checkbox-4"
+          disabled
+        >
+        <label
+          for="checkbox-4"
+          sprkCheckboxLabel
+          isDisabled="true"
+        >
+          Checkbox Item 1
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item>
+        <input
+          type="checkbox"
+          value="2"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input5"
+          sprkCheckboxInput
+          #checkboxInput5="ngModel"
+          data-id="checkbox-5"
+          id="checkbox-5"
+          disabled
+        >
+        <label
+          for="checkbox-5"
+          sprkCheckboxLabel
+          isDisabled="true"
+        >
+          Checkbox Item 2
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item>
+        <input
+          type="checkbox"
+          value="3"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input6"
+          sprkCheckboxInput
+          #checkboxInput6="ngModel"
+          data-id="checkbox-6"
+          id="checkbox-6"
+          disabled
+        >
+        <label
+          for="checkbox-6"
+          sprkCheckboxLabel
+          isDisabled="true"
+        >
+          Checkbox Item 3
+        </label>
+      </sprk-checkbox-item>
+    </fieldset>
+  </sprk-checkbox-group>
+
+  <sprk-checkbox-group variant="huge">
+    <fieldset sprkFieldset>
+      <legend sprkLegend>
+        Checkbox Group Label
+      </legend>
+      <sprk-checkbox-item variant="huge">
+        <input
+          type="checkbox"
+          value="1"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input7"
+          sprkCheckboxInput
+          #checkboxInput7="ngModel"
+          data-id="checkbox-7"
+          id="checkbox-7"
+          variant="huge"
+        >
+        <label
+          for="checkbox-7"
+          sprkCheckboxLabel
+          variant="huge"
+        >
+          Checkbox Item 1
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item variant="huge">
+        <input
+          type="checkbox"
+          value="2"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input8"
+          sprkCheckboxInput
+          #checkboxInput8="ngModel"
+          data-id="checkbox-8"
+          id="checkbox-8"
+          variant="huge"
+        >
+        <label
+          for="checkbox-8"
+          sprkCheckboxLabel
+          variant="huge"
+        >
+          Checkbox Item 2
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item variant="huge">
+        <input
+          type="checkbox"
+          value="3"
+          name="checkbox_input"
+          [(ngModel)]="checkbox_input9"
+          sprkCheckboxInput
+          #checkboxInput9="ngModel"
+          data-id="checkbox-9"
+          id="checkbox-9"
+          variant="huge"
+        >
+        <label
+          for="checkbox-9"
+          sprkCheckboxLabel
+          variant="huge"
+        >
+          Checkbox Item 3
+        </label>
+      </sprk-checkbox-item>
+    </fieldset>
+  </sprk-checkbox-group>
+
 
   <sprk-input-container>
     <label sprkLabel>Text Input Label</label>
@@ -117,30 +284,197 @@ import { FormGroup, FormControl } from '@angular/forms';
     <input name="phone_input" type="text" placeholder="(000) 000-0000" [(ngModel)]="phone_input" #phoneInput="ngModel"
       sprkInput />
   </sprk-input-container>
-  <sprk-selection-container>
-    <label sprkLabel>Radio Group Label</label>
-    <sprk-selection-item-container>
-      <input type="radio" value="1" name="radio_input" [(ngModel)]="radio_input" sprkSelectionInput #radioInput="ngModel"
-        data-id="radio-1" id="radio-1" (change)="onRadioSelect($event)">
-      <label for="radio-1" sprkSelectionLabel>
+  <sprk-radio-group>
+   <fieldset sprkFieldset>
+     <legend sprkLegend>
+       Radio Group Label
+     </legend>
+     <sprk-radio-item>
+       <input
+          type="radio"
+          value="1"
+          name="radio_input"
+          [(ngModel)]="radio_input"
+          sprkRadioInput
+          #radioInput="ngModel"
+          data-id="radio-1"
+          id="radio-1"
+        >
+        <label
+          for="radio-1"
+          sprkRadioLabel
+        >
+          Item 1
+        </label>
+     </sprk-radio-item>
+     <sprk-radio-item>
+       <input
+         type="radio"
+         value="2"
+         name="radio_input"
+         [(ngModel)]="radio_input"
+         sprkRadioInput
+         #radioInput="ngModel"
+         data-id="radio-2"
+         id="radio-2"
+       >
+       <label
+         for="radio-2"
+         sprkRadioLabel
+       >
+        Item 2
+       </label>
+     </sprk-radio-item>
+     <sprk-radio-item>
+       <input
+         type="radio"
+         value="3"
+         name="radio_input"
+         [(ngModel)]="radio_input"
+         sprkRadioInput
+         #radioInput="ngModel"
+         data-id="radio-3"
+         id="radio-3"
+       >
+       <label
+         for="radio-3"
+         sprkRadioLabel
+       >
+         Item 3
+       </label>
+     </sprk-radio-item>
+   </fieldset>
+ </sprk-radio-group>
+ <sprk-radio-group>
+    <fieldset sprkFieldset>
+      <legend sprkLegend isDisabled="true">
+        Radio Group Label
+      </legend>
+      <sprk-radio-item>
+        <input
+          type="radio"
+          value="1"
+          name="radio_input"
+          [(ngModel)]="radio_input"
+          sprkRadioInput
+          #radioInput="ngModel"
+          id="invalid-radio-1"
+          disabled
+        >
+        <label
+          for="disabled-radio-1"
+          sprkRadioLabel
+          isDisabled="true"
+        >
+          Item 1
+        </label>
+    </sprk-radio-item>
+    <sprk-radio-item>
+      <input
+          type="radio"
+          value="2"
+          name="radio_input"
+          [(ngModel)]="radio_input"
+          sprkRadioInput
+          #radioInput="ngModel"
+          id="disabled-radio-2"
+          disabled
+        >
+        <label
+          for="disabled-radio-2"
+          sprkRadioLabel
+          isDisabled="true"
+        >
+          Item 2
+        </label>
+    </sprk-radio-item>
+    <sprk-radio-item>
+      <input
+          type="radio"
+          value="3"
+          name="radio_input"
+          [(ngModel)]="radio_input"
+          sprkRadioInput
+          #radioInput="ngModel"
+          data-id="radio-3"
+          id="disabled-radio-3"
+          disabled
+        >
+        <label
+          for="disabled-radio-3"
+          sprkRadioLabel
+          isDisabled="true"
+        >
+          Item 3
+        </label>
+      </sprk-radio-item>
+    </fieldset>
+  </sprk-radio-group>
+  <sprk-radio-group variant="huge">
+  <fieldset sprkFieldset>
+    <legend sprkLegend>
+      Radio Group Label
+    </legend>
+    <sprk-radio-item variant="huge">
+      <input
+        type="radio"
+        value="1"
+        name="radio_input_huge"
+        [(ngModel)]="radio_input"
+        sprkRadioInput
+        variant="huge"
+        #radioInput="ngModel"
+        id="huge-radio-1"
+      >
+      <label
+        for="huge-radio-1"
+        sprkRadioLabel
+        variant="huge"
+      >
         Item 1
       </label>
-    </sprk-selection-item-container>
-    <sprk-selection-item-container>
-      <input type="radio" value="2" name="radio_input" sprkSelectionInput [(ngModel)]="radio_input" #radioInput="ngModel"
-        data-id="radio-2" id="radio-2" (change)="onRadioSelect($event)">
-      <label for="radio-2" sprkSelectionLabel>
+   </sprk-radio-item>
+   <sprk-radio-item variant="huge">
+     <input
+       type="radio"
+       value="2"
+       name="radio_input_huge"
+       [(ngModel)]="radio_input"
+       sprkRadioInput
+       variant="huge"
+       #radioInput="ngModel"
+       id="huge-radio-2"
+     >
+     <label
+       for="huge-radio-2"
+       sprkRadioLabel
+       variant="huge"
+     >
         Item 2
-      </label>
-    </sprk-selection-item-container>
-    <sprk-selection-item-container>
-      <input type="radio" value="3" name="radio_input" sprkSelectionInput [(ngModel)]="radio_input" #radioInput="ngModel"
-        data-id="radio-3" id="radio-3" (change)="onRadioSelect($event)">
-      <label for="radio-3" sprkSelectionLabel>
+     </label>
+   </sprk-radio-item>
+   <sprk-radio-item variant="huge">
+    <input
+        type="radio"
+        value="3"
+        name="huge"
+        [(ngModel)]="radio_input"
+        sprkRadioInput
+        variant="huge"
+        #radioInput="ngModel"
+        data-id="radio-3"
+        id="huge-radio-3"
+      >
+      <label
+        for="huge-radio-3"
+        sprkRadioLabel
+        variant="huge"
+      >
         Item 3
       </label>
-    </sprk-selection-item-container>
-  </sprk-selection-container>
+   </sprk-radio-item>
+ </fieldset>
+</sprk-radio-group>
   <sprk-icon-input-container>
     <label class="sprk-b-Label--with-icon sprk-u-ScreenReaderText" sprkLabel>
       Search
