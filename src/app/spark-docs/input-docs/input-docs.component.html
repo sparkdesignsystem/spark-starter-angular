@@ -29,6 +29,41 @@
 
 <sprk-checkbox-group>
   <fieldset sprkFieldset>
+    <legend sprkLegend>
+      Checkbox Group Label
+    </legend>
+    <sprk-checkbox-item>
+      <input type="checkbox" value="1" name="checkbox_input_invalid" [(ngModel)]="checkbox_input1_invalid" sprkCheckboxInput
+        #checkboxInput1="ngModel" data-id="checkbox-1-invalid" id="checkbox-1-invalid">
+      <label for="checkbox-1-invalid" sprkCheckboxLabel>
+        Checkbox Item 1
+      </label>
+    </sprk-checkbox-item>
+    <sprk-checkbox-item>
+      <input type="checkbox" value="2" name="checkbox_input_invalid" [(ngModel)]="checkbox_input2_invalid" sprkCheckboxInput
+        #checkboxInput2="ngModel" data-id="checkbox-2-invalid" id="checkbox-2-invalid">
+      <label for="checkbox-2-invalid" sprkCheckboxLabel>
+        Checkbox Item 2
+      </label>
+    </sprk-checkbox-item>
+    <sprk-checkbox-item>
+      <input type="checkbox" value="3" name="checkbox_input_invalid" [(ngModel)]="checkbox_input3_invalid" sprkCheckboxInput
+        #checkboxInput3="ngModel" data-id="checkbox-3-invalid" id="checkbox-3-invalid">
+      <label for="checkbox-3-invalid" sprkCheckboxLabel>
+        Checkbox Item 3
+      </label>
+    </sprk-checkbox-item>
+  </fieldset>
+  <span sprkFieldError>
+    <sprk-icon iconType="exclamation-filled-small" additionalClasses="sprk-b-ErrorIcon"></sprk-icon>
+    <div class="sprk-b-ErrorText">
+      There is an error on this field.
+    </div>
+  </span>
+</sprk-checkbox-group>
+
+<sprk-checkbox-group>
+  <fieldset sprkFieldset>
     <legend sprkLegend isDisabled="true">
       Checkbox Group Label
     </legend>
@@ -83,6 +118,41 @@
       </label>
     </sprk-checkbox-item>
   </fieldset>
+</sprk-checkbox-group>
+
+<sprk-checkbox-group variant="huge">
+  <fieldset sprkFieldset>
+    <legend sprkLegend>
+      Checkbox Group Label
+    </legend>
+    <sprk-checkbox-item variant="huge">
+      <input type="checkbox" value="1" name="checkbox_input-huge" [(ngModel)]="checkbox_input1_huge" sprkCheckboxInput
+        #checkboxInput1="ngModel" data-id="checkbox-1-huge" id="checkbox-1-huge" variant="huge">
+      <label for="checkbox-1-huge" sprkCheckboxLabel variant="huge">
+        Checkbox Item 1
+      </label>
+    </sprk-checkbox-item>
+    <sprk-checkbox-item variant="huge">
+      <input type="checkbox" value="2" name="checkbox_input-huge" [(ngModel)]="checkbox_input2_huge" sprkCheckboxInput
+        #checkboxInput2="ngModel" data-id="checkbox-2-huge" id="checkbox-2-huge" variant="huge">
+      <label for="checkbox-2-huge" sprkCheckboxLabel variant="huge">
+        Checkbox Item 2
+      </label>
+    </sprk-checkbox-item>
+    <sprk-checkbox-item variant="huge">
+      <input type="checkbox" value="3" name="checkbox_input-huge" [(ngModel)]="checkbox_input3_huge" sprkCheckboxInput
+        #checkboxInput3="ngModel" data-id="checkbox-3-huge" id="checkbox-3-huge" variant="huge">
+      <label for="checkbox-3-huge" sprkCheckboxLabel variant="huge">
+        Checkbox Item 3
+      </label>
+    </sprk-checkbox-item>
+  </fieldset>
+  <span sprkFieldError>
+    <sprk-icon iconType="exclamation-filled-small" additionalClasses="sprk-b-ErrorIcon"></sprk-icon>
+    <div class="sprk-b-ErrorText">
+      There is an error on this field.
+    </div>
+  </span>
 </sprk-checkbox-group>
 
 <sprk-selection-container>
@@ -222,7 +292,6 @@
   </fieldset>
 </sprk-radio-group>
 
-
 <sprk-radio-group>
   <fieldset sprkFieldset>
     <legend sprkLegend isDisabled="true">
@@ -230,7 +299,7 @@
     </legend>
     <sprk-radio-item>
       <input type="radio" value="1" name="radio_input2" [(ngModel)]="radio_input2" sprkRadioInput #radioInput2="ngModel"
-        id="invalid-radio-1" disabled>
+        id="disabled-radio-1" disabled>
       <label for="disabled-radio-1" sprkRadioLabel isDisabled="true">
         Item 1
       </label>
@@ -252,6 +321,40 @@
   </fieldset>
 </sprk-radio-group>
 
+<sprk-radio-group>
+  <fieldset sprkFieldset>
+    <legend sprkLegend>
+      Radio Group Label
+    </legend>
+    <sprk-radio-item>
+      <input type="radio" value="1" name="radio_input_default" [(ngModel)]="radio_input_default" sprkRadioInput
+        #radioInput="ngModel" id="default-radio-1">
+      <label for="default-radio-1" sprkRadioLabel>
+        Item 1
+      </label>
+    </sprk-radio-item>
+    <sprk-radio-item>
+      <input type="radio" value="2" name="radio_input_default" [(ngModel)]="radio_input_default" sprkRadioInput
+        #radioInput="ngModel" id="default-radio-2">
+      <label for="default-radio-2" sprkRadioLabel>
+        Item 2
+      </label>
+    </sprk-radio-item>
+    <sprk-radio-item>
+      <input type="radio" value="3" name="radio_input_default" [(ngModel)]="radio_input_default" sprkRadioInput
+        #radioInput="ngModel" data-id="radio-3" id="default-radio-3">
+      <label for="default-radio-3" sprkRadioLabel>
+        Item 3
+      </label>
+    </sprk-radio-item>
+  </fieldset>
+  <span sprkFieldError>
+    <sprk-icon iconType="exclamation-filled-small" additionalClasses="sprk-b-ErrorIcon"></sprk-icon>
+    <div class="sprk-b-ErrorText">
+      There is an error on this field.
+    </div>
+  </span>
+</sprk-radio-group>
 
 <sprk-radio-group variant="huge">
   <fieldset sprkFieldset>
@@ -259,21 +362,21 @@
       Radio Group Label
     </legend>
     <sprk-radio-item variant="huge">
-      <input type="radio" value="1" name="radio_input_huge" [(ngModel)]="radio_input3" sprkRadioInput variant="huge"
+      <input type="radio" value="1" name="radio_input_huge_2" [(ngModel)]="radio_input_huge_2" sprkRadioInput variant="huge"
         #radioInput3="ngModel" id="huge-radio-1">
       <label for="huge-radio-1" sprkRadioLabel variant="huge">
         Item 1
       </label>
     </sprk-radio-item>
     <sprk-radio-item variant="huge">
-      <input type="radio" value="2" name="radio_input_huge" [(ngModel)]="radio_input3" sprkRadioInput variant="huge"
+      <input type="radio" value="2" name="radio_input_huge_2" [(ngModel)]="radio_input_huge_2" sprkRadioInput variant="huge"
         #radioInput3="ngModel" id="huge-radio-2">
       <label for="huge-radio-2" sprkRadioLabel variant="huge">
         Item 2
       </label>
     </sprk-radio-item>
     <sprk-radio-item variant="huge">
-      <input type="radio" value="3" name="radio_input_huge" [(ngModel)]="radio_input3" sprkRadioInput variant="huge"
+      <input type="radio" value="3" name="radio_input_huge_2" [(ngModel)]="radio_input_huge_2" sprkRadioInput variant="huge"
         #radioInput3="ngModel" data-id="radio-3" id="huge-radio-3">
       <label for="huge-radio-3" sprkRadioLabel variant="huge">
         Item 3
@@ -282,6 +385,41 @@
   </fieldset>
 </sprk-radio-group>
 
+<sprk-radio-group variant="huge">
+  <fieldset sprkFieldset>
+    <legend sprkLegend>
+      Huge Invalid Radio Group Label
+    </legend>
+    <sprk-radio-item variant="huge">
+      <input type="radio" value="1" name="radio_input_huge_invalid" [(ngModel)]="radio_input_huge_invalid" sprkRadioInput
+        variant="huge" #radioInput="ngModel" id="huge-invalid-radio-1">
+      <label for="huge-invalid-radio-1" sprkRadioLabel variant="huge">
+        Item 1
+      </label>
+    </sprk-radio-item>
+    <sprk-radio-item variant="huge">
+      <input type="radio" value="2" name="radio_input_huge_invalid" [(ngModel)]="radio_input_huge_invalid" sprkRadioInput
+        variant="huge" #radioInput="ngModel" id="huge-invalid-radio-2">
+      <label for="huge-invalid-radio-2" sprkRadioLabel variant="huge">
+        Item 2
+      </label>
+    </sprk-radio-item>
+    <sprk-radio-item variant="huge">
+      <input type="radio" value="3" name="radio_input_huge_invalid" [(ngModel)]="radio_input_huge_invalid" sprkRadioInput
+        variant="huge" #radioInput="ngModel" id="huge-invalid-radio-3">
+      <label sprkRadioLabel for="huge-invalid-radio-3" variant="huge">
+        Item 3
+      </label>
+    </sprk-radio-item>
+  </fieldset>
+
+  <span sprkFieldError>
+    <sprk-icon iconType="exclamation-filled-small" additionalClasses="sprk-b-ErrorIcon"></sprk-icon>
+    <div class="sprk-b-ErrorText">
+      There is an error on this field.
+    </div>
+  </span>
+</sprk-radio-group>
 
 <sprk-selection-container>
   <label sprkLabel>Deprecated Radio Group</label>
