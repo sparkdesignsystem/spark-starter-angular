@@ -119,7 +119,40 @@
     </sprk-checkbox-item>
   </fieldset>
 </sprk-checkbox-group>
-
+  <sprk-checkbox-group variant="huge">
+    <fieldset sprkFieldset>
+      <legend sprkLegend>
+        Checkbox Group Label
+      </legend>
+      <sprk-checkbox-item variant="huge">
+        <input type="checkbox" value="1" name="checkbox_input-huge" [(ngModel)]="checkbox_input1_huge" sprkCheckboxInput
+          #checkboxInput1="ngModel" data-id="checkbox-1-huge" id="checkbox-1-huge" variant="huge">
+        <label for="checkbox-1-huge" sprkCheckboxLabel variant="huge">
+          Checkbox Item 1
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item variant="huge">
+        <input type="checkbox" value="2" name="checkbox_input-huge" [(ngModel)]="checkbox_input2_huge" sprkCheckboxInput
+          #checkboxInput2="ngModel" data-id="checkbox-2-huge" id="checkbox-2-huge" variant="huge">
+        <label for="checkbox-2-huge" sprkCheckboxLabel variant="huge">
+          Checkbox Item 2
+        </label>
+      </sprk-checkbox-item>
+      <sprk-checkbox-item variant="huge">
+        <input type="checkbox" value="3" name="checkbox_input-huge" [(ngModel)]="checkbox_input3_huge" sprkCheckboxInput
+          #checkboxInput3="ngModel" data-id="checkbox-3-huge" id="checkbox-3-huge" variant="huge">
+        <label for="checkbox-3-huge" sprkCheckboxLabel variant="huge">
+          Checkbox Item 3
+        </label>
+      </sprk-checkbox-item>
+    </fieldset>
+    <span sprkFieldError>
+      <sprk-icon iconType="exclamation-filled-small" additionalClasses="sprk-b-ErrorIcon"></sprk-icon>
+      <div class="sprk-b-ErrorText">
+        There is an error on this field.
+      </div>
+    </span>
+  </sprk-checkbox-group>
 <sprk-selection-container>
   <label sprkLabel>
     Deprecated Checkbox Group
