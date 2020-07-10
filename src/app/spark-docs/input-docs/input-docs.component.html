@@ -29,6 +29,41 @@
 
 <sprk-checkbox-group>
   <fieldset sprkFieldset>
+    <legend sprkLegend>
+      Checkbox Group Label
+    </legend>
+    <sprk-checkbox-item>
+      <input type="checkbox" value="1" name="checkbox_input_invalid" [(ngModel)]="checkbox_input1_invalid" sprkCheckboxInput
+        #checkboxInput1="ngModel" data-id="checkbox-1-invalid" id="checkbox-1-invalid">
+      <label for="checkbox-1-invalid" sprkCheckboxLabel>
+        Checkbox Item 1
+      </label>
+    </sprk-checkbox-item>
+    <sprk-checkbox-item>
+      <input type="checkbox" value="2" name="checkbox_input_invalid" [(ngModel)]="checkbox_input2_invalid" sprkCheckboxInput
+        #checkboxInput2="ngModel" data-id="checkbox-2-invalid" id="checkbox-2-invalid">
+      <label for="checkbox-2-invalid" sprkCheckboxLabel>
+        Checkbox Item 2
+      </label>
+    </sprk-checkbox-item>
+    <sprk-checkbox-item>
+      <input type="checkbox" value="3" name="checkbox_input_invalid" [(ngModel)]="checkbox_input3_invalid" sprkCheckboxInput
+        #checkboxInput3="ngModel" data-id="checkbox-3-invalid" id="checkbox-3-invalid">
+      <label for="checkbox-3-invalid" sprkCheckboxLabel>
+        Checkbox Item 3
+      </label>
+    </sprk-checkbox-item>
+  </fieldset>
+  <span sprkFieldError>
+    <sprk-icon iconType="exclamation-filled-small" additionalClasses="sprk-b-ErrorIcon"></sprk-icon>
+    <div class="sprk-b-ErrorText">
+      There is an error on this field.
+    </div>
+  </span>
+</sprk-checkbox-group>
+
+<sprk-checkbox-group>
+  <fieldset sprkFieldset>
     <legend sprkLegend isDisabled="true">
       Checkbox Group Label
     </legend>
