@@ -30,6 +30,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
         <sprk-promo
           isFlag="true"
+          hasBorder="true"
           imgSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgAlt="Spark Design System Logo"
           idString="promo-2"
@@ -49,6 +50,7 @@ import { RouterTestingModule } from '@angular/router/testing';
           title="Title"
           subtitle="Subtitle"
           media="img"
+          hasBorder="true"
           imgAlt="A yellow flower"
           imgSrc="https://spark-assets.netlify.app/flower.jpg"
           cta="button"
@@ -70,6 +72,7 @@ import { RouterTestingModule } from '@angular/router/testing';
           title="Title"
           subtitle="Subtitle"
           mediaRev="true"
+          hasBorder="true"
           imgAlt="A yellow flower"
           imgSrc="https://spark-assets.netlify.app/flower.jpg"
           imgHref="https://sparkdesignsystem.com"

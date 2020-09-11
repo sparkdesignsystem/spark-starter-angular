@@ -123,7 +123,7 @@ import { Component, OnInit } from '@angular/core';
       >
         <sprk-icon
           iconType="communication"
-          additionalClasses="sprk-c-Icon--l sprk-c-Icon--stroke-current-color sprk-u-mrs"
+          additionalClasses="sprk-c-Icon--l sprk-c-Icon--stroke-current-color sprk-c-Icon--filled-current-color sprk-u-mrs"
         ></sprk-icon>
 
         Message Us

@@ -124,7 +124,7 @@ import { Component } from '@angular/core';
 
         <sprk-link
           navItem-slot
-          linkType="plain"
+          linkType="simple"
           additionalClasses="sprk-c-Masthead__link"
           href="#nogo"
         >
@@ -140,7 +140,7 @@ import { Component } from '@angular/core';
           >
             <li>
               <a
-                class="sprk-b-Link sprk-b-Link--plain sprk-c-Masthead__link"
+                class="sprk-b-Link sprk-b-Link--simple sprk-c-Masthead__link"
                 href="#nogo"
               >
                 Item 1
@@ -149,7 +149,7 @@ import { Component } from '@angular/core';
 
             <li>
               <a
-                class="sprk-b-Link sprk-b-Link--plain sprk-c-Masthead__link"
+                class="sprk-b-Link sprk-b-Link--simple sprk-c-Masthead__link"
                 href="#nogo"
               >
                 Item 2
@@ -163,7 +163,7 @@ import { Component } from '@angular/core';
         >
           <li>
             <a
-              class="sprk-b-Link sprk-b-Link--plain sprk-c-Masthead__link"
+              class="sprk-b-Link sprk-b-Link--simple sprk-c-Masthead__link"
               href="tel:555-555-5555"
             >
               (555) 555-5555
@@ -172,7 +172,7 @@ import { Component } from '@angular/core';
 
           <li>
             <a
-              class="sprk-b-Link sprk-b-Link--plain sprk-c-Masthead__link"
+              class="sprk-b-Link sprk-b-Link--simple sprk-c-Masthead__link"
               href="#nogo"
             >
               Talk To Us
@@ -181,7 +181,7 @@ import { Component } from '@angular/core';
 
           <li>
             <a
-              class="sprk-c-Button sprk-c-Button--secondary sprk-c-Button--compact"
+              class="sprk-c-Button sprk-c-Button--quaternary sprk-c-Button--compact"
               href="#nogo"
             >
               Sign In
@@ -190,7 +190,7 @@ import { Component } from '@angular/core';
         </ul>
         <div class="sprk-u-mas" narrowNavFooter>
           <a
-            class="sprk-c-Button sprk-c-Button--secondary sprk-c-Button--compact sprk-c-Button--full@s"
+            class="sprk-c-Button sprk-c-Button--quaternary sprk-c-Button--compact sprk-c-Button--full@s"
             href="#nogo"
             >Sign In</a
           >
