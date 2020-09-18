@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
         Dividers
       </h2>
 
-      <sprk-divider idString="divider-1"></sprk-divider>
+      <hr sprkDivider idString="divider-1" />
 
       <h2 class="sprk-demo-b-h2">
         Divider With Additional Class sprk-u-mbm
       </h2>
-      <sprk-divider additionalClasses="sprk-u-mbm"></sprk-divider>
+      <hr sprkDivider additionalClasses="sprk-u-mbm">
     </div>
   `
 })

@@ -48,18 +48,18 @@ $app-namespace: 'sprk-demo';
   padding-bottom: $sprk-space-s;
   margin-bottom: $sprk-space-s;
   border: 0;
-  border-top: $sprk-tab-navigation-btn-border-top;
+  border-top: $sprk-tab-navigation-btn-border-bottom;
   color: $sprk-black;
 }
 
 .#{$app-namespace}-c-AngularNav a:hover,
 .#{$app-namespace}-c-AngularNav a:focus {
-  border-top: $sprk-tab-navigation-btn-hover-border-top;
+  border-top: $sprk-tab-navigation-btn-hover-border-bottom;
 }
 
 .#{$app-namespace}-c-AngularNav__item--active {
   background-color: $sprk-white;
-  border-top: $sprk-tab-navigation-btn-active-border-top;
+  border-top: $sprk-tab-navigation-btn-active-border-bottom;
   color: $sprk-tab-navigation-btn-active-color;
 }
 

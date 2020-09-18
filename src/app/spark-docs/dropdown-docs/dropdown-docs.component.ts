@@ -19,6 +19,7 @@ import { Component } from '@angular/core';
       <sprk-dropdown
         dropdownType="informational"
         additionalTriggerClasses="sprk-b-Link--plain"
+        additionalIconClasses="sprk-c-Icon--l"
         triggerText="Make a Selection..."
         title="My Choices"
         triggerIconType="chevron-down"
@@ -51,7 +52,7 @@ import { Component } from '@angular/core';
             triggerIconType="chevron-down"
             (choiceMade)="choiceHandler($event)"
             [choices]="informationalChoices"
-            additionalIconClasses="sprk-c-Icon--stroke-current-color sprk-Stack__item"
+            additionalIconClasses="sprk-c-Icon--l sprk-c-Icon--stroke-current-color sprk-c-Icon--filled-current-color sprk-Stack__item"
             additionalTriggerTextClasses="sprk-o-Stack__item sprk-o-Stack__item--flex@xxs"
           >
             <div
