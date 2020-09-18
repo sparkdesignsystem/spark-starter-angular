@@ -9,7 +9,7 @@ export class IconSetComponent implements OnInit {
 
   ngOnInit(): void {
     window
-      .fetch('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Icons/spark-core-icons-V12.svg', {})
+      .fetch('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Icons/spark-icons-v14.svg', {})
       .then(response => response.text())
       .then(svg => {
         this.ref.nativeElement.innerHTML += svg;
