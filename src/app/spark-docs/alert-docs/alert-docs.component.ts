@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
         Alerts
       </h2>
 
-      <sprk-alert alertType="info" idString="alert-info-1" analyticsString="object.action.event">
+      <sprk-alert variant="info" idString="alert-info-1" analyticsString="object.action.event">
         This is an info Spark alert!
       </sprk-alert>
     </div>
@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
         Fail alert
       </h2>
 
-      <sprk-alert alertType="fail" [dismissible]="true" idString="alert-fail-1" analyticsString="object.action.event">
+      <sprk-alert variant="fail" [isDismissible]="true" idString="alert-fail-1" analyticsString="object.action.event">
         Hello, World. I'm dismissible!
       </sprk-alert>
     </div>
@@ -28,7 +28,7 @@ import { Component, OnInit } from '@angular/core';
         Success alert
       </h2>
 
-      <sprk-alert alertType="success" [dismissible]="true" idString="alert-success-2" analyticsString="object.action.event">
+      <sprk-alert variant="success" [isDismissible]="true" idString="alert-success-2" analyticsString="object.action.event">
         Hello, World. I'm dismissible!
       </sprk-alert>
     </div>
@@ -38,7 +38,7 @@ import { Component, OnInit } from '@angular/core';
         Not Dismissible
       </h2>
 
-      <sprk-alert alertType="success" [dismissible]="false" idString="alert-success-1" analyticsString="object.action.event">
+      <sprk-alert variant="success" [isDismissible]="false" idString="alert-success-1" analyticsString="object.action.event">
         Hello, World.
       </sprk-alert>
     </div>
