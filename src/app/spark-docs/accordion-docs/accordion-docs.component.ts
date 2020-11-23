@@ -9,9 +9,10 @@ import { Component } from '@angular/core';
         <sprk-accordion-item
           idString="accordion-item-1"
           analyticsString="object.action.event"
-          additionalHeadingClasses="sprk-b-TypeDisplaySeven"
+          headingAdditionalClasses="sprk-b-TypeDisplaySeven"
+          contentAdditionalClasses="sprk-b-BodyTypeTwo"
           isOpen="true"
-          title="This is a longer title than all the other accordion titles here. But, it works!"
+          heading="This is a longer title than all the other accordion titles here. But, it works!"
         >
           <p>
             This is some content This is some content. This is some content.
@@ -20,14 +21,16 @@ import { Component } from '@angular/core';
         </sprk-accordion-item>
         <sprk-accordion-item
           isOpen="true"
-          additionalHeadingClasses="sprk-b-TypeDisplaySeven"
-          title="This is another title"
+          headingAdditionalClasses="sprk-b-TypeDisplaySeven"
+          contentAdditionalClasses="sprk-b-BodyTypeTwo"
+          heading="This is another title"
         >
           <p>This is some more content.</p>
         </sprk-accordion-item>
         <sprk-accordion-item
-          additionalHeadingClasses="sprk-b-TypeDisplaySeven"
-          title="This is another title"
+          headingAdditionalClasses="sprk-b-TypeDisplaySeven"
+          contentAdditionalClasses="sprk-b-BodyTypeTwo"
+          heading="This is another title"
         >
           <p>This is some more content.</p>
         </sprk-accordion-item>
