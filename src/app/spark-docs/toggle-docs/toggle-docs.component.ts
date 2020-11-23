@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       <h2 class="sprk-demo-b-h2">Toggle</h2>
 
       <sprk-toggle
-        title="This is a Spark toggle!"
+        triggerText="This is a Spark toggle!"
         analyticsString="My disclaimer Title"
         idString="toggle-1"
       >
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <h2 class="sprk-demo-b-h2">Toggle With Additional Classes</h2>
 
       <sprk-toggle
-        title="This is a Spark toggle with width set at 10%"
+        triggerText="This is a Spark toggle with width set at 10%"
         analyticsString="My disclaimer Title"
         additionalClasses="sprk-u-Width-10"
         idString="toggle-2"
