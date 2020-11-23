@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
         triggerText="This is a Spark toggle!"
         analyticsString="My disclaimer Title"
         idString="toggle-1"
+        triggerTextAdditionalClasses="trigger-text-test-class"
       >
         <p>This is some copy for the toggle about toggle things.</p>
       </sprk-toggle>
@@ -23,6 +24,8 @@ import { Component } from '@angular/core';
         analyticsString="My disclaimer Title"
         additionalClasses="sprk-u-Width-10"
         idString="toggle-2"
+        contentAdditionalClasses="content-test-class"
+        iconAdditionalClasses="icon-test-class"
       >
         <p class="sprk-b-TypeBodyFour">
           This is some copy for the toggle about toggle things.
