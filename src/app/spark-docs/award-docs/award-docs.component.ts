@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="sprk-o-CenteredColumn">
         <sprk-award
           splitAt="small"
-          title="Spark Award Component"
+          heading="Spark Award Component"
           imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgOneAlt="Spark Design System Logo"
@@ -21,8 +21,8 @@ import { Component, OnInit } from '@angular/core';
           imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
-          analyticsStringImgOne="Foo"
-          analyticsStringImgTwo="Test"
+          imgOneAnalyticsString="Foo"
+          imgTwoAnalyticsString="Test"
           idString="award-1">
         </sprk-award>
       </div>
@@ -36,7 +36,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="sprk-o-CenteredColumn">
         <sprk-award
           splitAt="medium"
-          title="Spark Award Component"
+          heading="Spark Award Component"
           imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgOneAlt="Spark Design System Logo"
@@ -45,8 +45,8 @@ import { Component, OnInit } from '@angular/core';
           imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
-          analyticsStringImgOne="Foo"
-          analyticsStringImgTwo="Test"
+          imgOneAnalyticsString="Foo"
+          imgTwoAnalyticsString="Test"
           idString="award-2">
         </sprk-award>
       </div>
@@ -60,7 +60,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="sprk-o-CenteredColumn">
         <sprk-award
           splitAt="large"
-          title="Spark Award Component"
+          heading="Spark Award Component"
           imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgOneAlt="Spark Design System Logo"
@@ -69,8 +69,8 @@ import { Component, OnInit } from '@angular/core';
           imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
-          analyticsStringImgOne="Foo"
-          analyticsStringImgTwo="Test"
+          imgOneAnalyticsString="Foo"
+          imgTwoAnalyticsString="Test"
           idString="award-3">
         </sprk-award>
       </div>
@@ -84,7 +84,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="sprk-o-CenteredColumn">
         <sprk-award
           splitAt="huge"
-          title="Spark Award Component"
+          heading="Spark Award Component"
           imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgOneAlt="Spark Design System Logo"
@@ -93,8 +93,8 @@ import { Component, OnInit } from '@angular/core';
           imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
-          analyticsStringImgOne="Foo"
-          analyticsStringImgTwo="Test"
+          imgOneAnalyticsString="Foo"
+          imgTwoAnalyticsString="Test"
           idString="award-4">
         </sprk-award>
       </div>
@@ -109,7 +109,7 @@ import { Component, OnInit } from '@angular/core';
         <sprk-award
           disclaimer="false"
           splitAt="huge"
-          title="Spark Award Component"
+          heading="Spark Award Component"
           imgOneSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgTwoSrc="https://spark-assets.netlify.app/spark-placeholder.jpg"
           imgOneAlt="Spark Design System Logo"
@@ -118,8 +118,8 @@ import { Component, OnInit } from '@angular/core';
           imgTwoAlt="Spark Design System Logo"
           disclaimerCopy="This is some copy for the disclaimer about disclaimer things."
           disclaimerTitle="My disclaimer title"
-          analyticsStringImgOne="Foo"
-          analyticsStringImgTwo="Test"
+          imgOneAnalyticsString="Foo"
+          imgTwoAnalyticsString="Test"
           idString="award-5">
         </sprk-award>
       </div>

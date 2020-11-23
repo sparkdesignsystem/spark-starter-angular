@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { setSpinning } from '@sparkdesignsystem/spark';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'sprk-button-docs',
@@ -26,19 +25,17 @@ import { setSpinning } from '@sparkdesignsystem/spark';
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Spinner Buttons</h2>
-      <button sprkButton (click)="checkSpinner($event)">Spinner Button</button>
+      <button
+        idString="button-spinning"
+        analyticsString="spinning"
+        sprkButton
+        [isLoading]="true"
+      >
+        <div sprkSpinner></div>
+      </button>
     </div>
   `
 })
 export class ButtonDocsComponent {
   constructor() {}
-
-  submitSpinning = false;
-
-  checkSpinner(event): void {
-    if (!this.submitSpinning) {
-      setSpinning(event.target, {});
-      this.submitSpinning = true;
-    }
-  }
 }
