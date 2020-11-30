@@ -6,4 +6,4 @@ $sprk-webfonts:
   ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Regular.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Regular.woff') format('woff')), RocketSans, 400),
   ((url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Light.woff2') format('woff2'), url('https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Light.woff') format('woff')), RocketSans, 300);
 
-@import "node_modules/@sparkdesignsystem/spark/spark.scss";
+@import "node_modules/@sparkdesignsystem/spark-styles/spark.scss";
