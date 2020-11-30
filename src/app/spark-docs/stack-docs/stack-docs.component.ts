@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <div class="sprk-demo-o-ContentGrouping sprk-u-mbh">
       <h2 class="sprk-demo-b-h2 sprk-u-mbl">Stack With Buttons</h2>
 
-      <sprk-stack itemSpacing="medium">
+      <sprk-stack itemSpacing="medium" idString="stack-1">
         <button sprkButton sprkStackItem>Hello, World.</button>
         <button sprkButton sprkStackItem class="sprk-c-Button--secondary">
           Hello, World.
