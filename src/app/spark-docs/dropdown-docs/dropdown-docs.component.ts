@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
         dropdownType="base"
         title="My Choices"
         additionalTriggerClasses="sprk-b-Link--plain"
+        additionalIconClasses="sprk-c-Icon--l"
         triggerIconType="settings"
         [choices]="choices"
         (choiceMade)="choiceHandler($event)"

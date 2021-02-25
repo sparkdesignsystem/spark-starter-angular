@@ -47,7 +47,7 @@ import { Component, OnInit } from '@angular/core';
       </sprk-pagination>
     </div>
 
-    <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
+    <div sprkDivider additionalClasses="sprk-u-mbh"></div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">
@@ -100,7 +100,7 @@ import { Component, OnInit } from '@angular/core';
       </sprk-pagination>
     </div>
 
-    <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
+    <div sprkDivider additionalClasses="sprk-u-mbh"></div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">
@@ -157,7 +157,7 @@ import { Component, OnInit } from '@angular/core';
       </sprk-pagination>
     </div>
 
-    <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
+    <div sprkDivider additionalClasses="sprk-u-mbh"></div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">
@@ -173,7 +173,7 @@ import { Component, OnInit } from '@angular/core';
       </sprk-pagination>
     </div>
 
-    <sprk-divider additionalClasses="sprk-u-mbh"></sprk-divider>
+    <div sprkDivider additionalClasses="sprk-u-mbh"></div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">
