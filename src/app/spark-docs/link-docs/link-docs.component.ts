@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'sprk-link-docs',
@@ -130,8 +130,119 @@ import { Component, OnInit } from '@angular/core';
       </sprk-link>
     </div>
     <div id="info">Hi, I'm info!</div>
+
+    <div class="sprk-demo-o-ContentGrouping">
+      <h2 class="sprk-demo-b-h2">
+        Link Directive
+      </h2>
+
+      <a
+        href="#"
+        sprkLink
+        idString="default-link"
+        analyticsString="default-link"
+      >
+        Default Link
+      </a>
+
+      <a
+        routerLink="/alerts"
+        sprkLink
+      >
+        Default Link Using Router
+      </a>
+
+      <a
+        href="#"
+        sprkLink
+        variant="simple"
+        idString="simple-link"
+        analyticsString="simple-link"
+      >
+        Simple Link
+      </a>
+
+      <a
+        sprkLink
+        href="#"
+        variant="light"
+        idString="light-link"
+        analyticsString="light-link"
+        class="sprk-u-BackgroundColor--black"
+      >
+        Light Link
+      </a>
+
+      <a
+        href="#"
+        sprkLink
+        variant="hasIcon"
+        idString="icon-link-1"
+        analyticsString="icon-link-1"
+      >
+        <sprk-icon
+          iconType="arrow-left"
+          additionalClasses="
+            sprk-c-Icon--l
+            sprk-c-Icon--filled-current-color
+            sprk-u-mrs"
+        >
+        </sprk-icon>
+        Back
+      </a>
+      <a
+        href="#"
+        sprkLink
+        isDisabled="true"
+        idString="disabled-link"
+        analyticsString="disabled-link"
+      >
+        Disabled Link
+      </a>
+
+      <a
+        href="#"
+        sprkLink
+        variant="simple"
+        isDisabled="true"
+        idString="disabled-link-simple"
+        analyticsString="disabled-link-simple"
+      >
+        Disabled Simple Link
+      </a>
+
+      <a
+        isDisabled="true"
+        sprkLink
+        href="#"
+        variant="light"
+        idString="disabled-light-link"
+        class="sprk-u-BackgroundColor--black"
+        analyticsString="disabled-light-link"
+      >
+        Disabled Light Link
+      </a>
+
+      <a
+        href="#"
+        sprkLink
+        variant="hasIcon"
+        isDisabled="true"
+        idString="disabled-icon-link-1"
+        analyticsString="disabled-icon-link-1"
+      >
+        <sprk-icon
+          iconType="arrow-left"
+          additionalClasses="
+            sprk-c-Icon--xl
+            sprk-c-Icon--filled-current-color
+            sprk-u-mrs"
+        >
+        </sprk-icon>
+        Disabled Icon Link
+      </a>
+    </div>
   `,
-  styles: ['']
 })
 export class LinkDocsComponent {
   constructor() {}
