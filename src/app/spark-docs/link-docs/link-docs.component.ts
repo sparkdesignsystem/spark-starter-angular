@@ -122,7 +122,7 @@ import { Component } from '@angular/core';
         analyticsString="object.action.event"
       >
         <sprk-icon
-          iconType="communication"
+          iconName="communication"
           additionalClasses="sprk-c-Icon--l sprk-c-Icon--stroke-current-color sprk-c-Icon--filled-current-color sprk-u-mrs"
         ></sprk-icon>
 
@@ -181,7 +181,7 @@ import { Component } from '@angular/core';
         analyticsString="icon-link-1"
       >
         <sprk-icon
-          iconType="arrow-left"
+          iconName="arrow-left"
           additionalClasses="
             sprk-c-Icon--l
             sprk-c-Icon--filled-current-color
@@ -232,7 +232,7 @@ import { Component } from '@angular/core';
         analyticsString="disabled-icon-link-1"
       >
         <sprk-icon
-          iconType="arrow-left"
+          iconName="arrow-left"
           additionalClasses="
             sprk-c-Icon--xl
             sprk-c-Icon--filled-current-color
