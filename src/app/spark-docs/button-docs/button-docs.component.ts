@@ -10,15 +10,15 @@ import { Component } from '@angular/core';
     </div>
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Secondary Buttons</h2>
-      <button class="sprk-c-Button--secondary" sprkButton>Hello, World.</button>
-      <button disabled class="sprk-c-Button--secondary" sprkButton>
+      <button variant="secondary" sprkButton>Hello, World.</button>
+      <button disabled variant="secondary" sprkButton>
         Hello, World.
       </button>
     </div>
     <div class="sprk-demo-o-ContentGrouping" id="foo">
       <h2 class="sprk-demo-b-h2">Tertiary Buttons</h2>
-      <button class="sprk-c-Button--tertiary" sprkButton>Hello, World.</button>
-      <button disabled class="sprk-c-Button--tertiary" sprkButton>
+      <button variant="tertiary" sprkButton>Hello, World.</button>
+      <button disabled variant="tertiary" sprkButton>
         Hello, World.
       </button>
     </div>
@@ -29,9 +29,18 @@ import { Component } from '@angular/core';
         idString="button-spinning"
         analyticsString="spinning"
         sprkButton
-        [isLoading]="true"
+        [isSpinning]="true"
       >
         <div sprkSpinner></div>
+      </button>
+
+      <button
+        variant="secondary"
+        idString="button-spinning-secondary"
+        sprkButton
+        [isSpinning]="true"
+      >
+        <div sprkSpinner variant="secondary"></div>
       </button>
     </div>
   `

@@ -9,4 +9,4 @@ This repository includes test pages for each of the Spark Design System componen
 1. `clone` your forked repo with `git clone <yourRepoUrl>`.
 1. [Install Node](https://nodejs.org/en/).
 1. `cd` into the project directory and run `npm install`.
-1. Run `npm run start` in your project directory.
+1. Run `npm start` in your project directory.

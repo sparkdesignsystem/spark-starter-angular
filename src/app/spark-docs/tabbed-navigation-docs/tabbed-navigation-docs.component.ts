@@ -5,26 +5,53 @@ import { Component } from '@angular/core';
   template: `
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">
-        Tabbed Navigation
+        Tabs
       </h2>
 
-      <sprk-tabbed-navigation idString="navigation-tabbed-1">
-        <button sprkTabbedNavigationTab analyticsString="Tab: 1">Tab 1</button>
-        <button [defaultActive]=true sprkTabbedNavigationTab>Tab 2</button>
-        <button sprkTabbedNavigationTab>Tab 3</button>
-        <div sprkTabbedNavigationPanel>
-          <p>Tab One Tab One Tab One Tab One Tab One Tab One Tab One Tab One Tab One Tab One Tab One</p>
+      <sprk-tabs idString="tabs-1">
+        <button
+          sprkTabsButton
+          analyticsString="Tab: 1"
+          idString="tab-1"
+          type="button"
+        >
+          Tab 1
+        </button>
+        <button
+          sprkTabsButton
+          idString="tab-2"
+          [isDefaultActive]="true"
+          type="button"
+        >
+          Tab 2
+        </button>
+        <button
+          sprkTabsButton
+          idString="tab-3"
+          type="button"
+        >
+          Tab 3
+        </button>
+        <div sprkTabsPanel>
+          <p sprkText variant="bodyTwo">
+            Tab 1 Content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
-        <div [defaultActive]="true" sprkTabbedNavigationPanel>
-          <p>Tab Two Tab Two Tab Two Tab Two Tab Two Tab Two Tab Two Tab Two Tab Two Tab Two Tab Two</p>
+        <div [isDefaultActive]="true" sprkTabsPanel>
+          <p sprkText variant="bodyTwo">
+            Tab 2 Content Sed quis rhoncus ipsum. Nulla euismod nisi est, vel
+            consequat ante consectetur in.
+          </p>
         </div>
-        <div sprkTabbedNavigationPanel>
-          <p>Tab Three Tab Three Tab Three Tab Three Tab Three Tab Three Tab Three Tab Three Tab Three Tab Three Tab Three</p>
+        <div sprkTabsPanel>
+          <p sprkText variant="bodyTwo">
+            Tab 3 Content Ut interdum dictum est at ornare. Nam nec dapibus nibh.
+            Integer venenatis ex eu mi euismod, non ultricies lacus venenatis.
+          </p>
         </div>
-      </sprk-tabbed-navigation>
+      </sprk-tabs>
     </div>
   `,
-  styles: ['']
 })
 export class TabbedNavigationDocsComponent {
   constructor() {}

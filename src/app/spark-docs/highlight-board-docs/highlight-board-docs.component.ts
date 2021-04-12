@@ -83,7 +83,6 @@ import { Component } from '@angular/core';
       </sprk-highlight-board>
     </div>
   `,
-  styles: ['']
 })
 export class HighlightBoardDocsComponent {
   constructor() {}
