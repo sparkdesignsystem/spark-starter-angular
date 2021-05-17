@@ -11,6 +11,7 @@ import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 // Docs Site Component Imports
 import { AccordionDocsComponent } from './spark-docs/accordion-docs/accordion-docs.component';
 import { AlertDocsComponent } from './spark-docs/alert-docs/alert-docs.component';
+import { AutocompleteDocsComponent } from './spark-docs/autocomplete-docs/autocomplete-docs.component';
 import { AwardDocsComponent } from './spark-docs/award-docs/award-docs.component';
 import { ButtonDocsComponent } from './spark-docs/button-docs/button-docs.component';
 import { BoxDocsComponent } from './spark-docs/box-docs/box-docs.component';
@@ -42,6 +43,7 @@ import { TooltipDocsComponent } from './spark-docs/tooltip-docs/tooltip-docs.com
 
 const appRoutes: Routes = [
   { path: 'alerts', component: AlertDocsComponent },
+  { path: 'autocomplete', component: AutocompleteDocsComponent },
   { path: 'cards', component: CardDocsComponent },
   { path: 'centered-column', component: CenteredColumnDocsComponent },
   { path: 'box', component: BoxDocsComponent },
@@ -114,7 +116,7 @@ const appRoutes: Routes = [
       anchorScrolling: 'enabled'
     }),
     BrowserModule,
-    SparkAngularModule
+    SparkAngularModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
