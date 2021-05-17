@@ -106,7 +106,8 @@ const appRoutes: Routes = [
     TabbedNavigationDocsComponent,
     DictionaryDocsComponent,
     PaginationDocsComponent,
-    HighlightBoardDocsComponent
+    HighlightBoardDocsComponent,
+    AutocompleteDocsComponent,
   ],
   imports: [
     BrowserAnimationsModule,
