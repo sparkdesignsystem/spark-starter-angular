@@ -90,3 +90,14 @@ $app-namespace: 'sprk-demo';
   margin-bottom: 0;
   margin-right: 1rem;
 }
+
+// Copying styles from sprk-u-Display--none so we don't need
+// to import the whole package
+.cdk-visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

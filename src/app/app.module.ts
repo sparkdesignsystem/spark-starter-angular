@@ -12,6 +12,8 @@ import { SparkAngularModule } from '@sparkdesignsystem/spark-angular';
 import { AccordionDocsComponent } from './spark-docs/accordion-docs/accordion-docs.component';
 import { AlertDocsComponent } from './spark-docs/alert-docs/alert-docs.component';
 import { AutocompleteDocsComponent } from './spark-docs/autocomplete-docs/autocomplete-docs.component';
+import { AutocompletePipe } from './spark-docs/autocomplete-docs/examples/autocomplete-docs.pipe';
+import { AutocompleteMultilinePipe } from './spark-docs/autocomplete-docs/examples/autocomplete-docs-multiline.pipe';
 import { AwardDocsComponent } from './spark-docs/award-docs/award-docs.component';
 import { ButtonDocsComponent } from './spark-docs/button-docs/button-docs.component';
 import { BoxDocsComponent } from './spark-docs/box-docs/box-docs.component';
@@ -40,6 +42,12 @@ import { TabbedNavigationDocsComponent } from './spark-docs/tabbed-navigation-do
 import { TableDocsComponent } from './spark-docs/table-docs/table-docs.component';
 import { ToggleDocsComponent } from './spark-docs/toggle-docs/toggle-docs.component';
 import { TooltipDocsComponent } from './spark-docs/tooltip-docs/tooltip-docs.component';
+import { AutocompleteExampleBaseComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-base.component';
+import { AutocompleteExampleDisallowFreeformComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-disallow-freeform.component';
+import { AutocompleteExampleMultilineComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-multiline.component';
+import { AutocompleteExamplePinnedComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-pinned.component';
+import { AutocompleteExampleAsyncComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-async.component';
+import { AutocompleteExampleHugeComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-huge.component';
 
 const appRoutes: Routes = [
   { path: 'alerts', component: AlertDocsComponent },
@@ -108,6 +116,14 @@ const appRoutes: Routes = [
     PaginationDocsComponent,
     HighlightBoardDocsComponent,
     AutocompleteDocsComponent,
+    AutocompletePipe,
+    AutocompleteMultilinePipe,
+    AutocompleteExampleBaseComponent,
+    AutocompleteExampleDisallowFreeformComponent,
+    AutocompleteExampleMultilineComponent,
+    AutocompleteExamplePinnedComponent,
+    AutocompleteExampleAsyncComponent,
+    AutocompleteExampleHugeComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -119,7 +135,7 @@ const appRoutes: Routes = [
     BrowserModule,
     SparkAngularModule,
   ],
-  providers: [],
+  providers: [AutocompletePipe, AutocompleteMultilinePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
