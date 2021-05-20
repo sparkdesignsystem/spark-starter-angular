@@ -21,11 +21,11 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
         <input id="autocomplete-base-input" name="autocomplete-base-input" type="text"
           class="sprk-b-TextInput--has-svg-icon sprk-u-Width-100" aria-describedby="autocomplete-base--error-container"
           aria-autocomplete="list" sprkInput autocomplete="off" autocapitalize="off" spellcheck="false"
-          (focus)="inputFocused()" (blur)="inputBlurred()" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
+          (focus)="inputFocused()" (keydown)="inputKeydown($event)" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
       </div>
       <ul sprkAutocompleteResults aria-labelledby="autocomplete-base-label" role="listbox">
         <ng-container *ngIf="(data | search:autocompleteValue) as result">
-          <li *ngIf="result.length === 0" class="sprk-c-Autocomplete__result">
+          <li *ngIf="result.length === 0" sprkAutocompleteResult>
             <div class="sprk-o-Flag">
               <div class="sprk-o-Flag__figure">
                 <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
@@ -81,13 +81,15 @@ export class AutocompleteExampleBaseComponent {
     this.sparkAutocomplete.showResults();
   }
 
-  inputBlurred = () => {
-    const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
-    if (selectedId) {
-      this.selectItem(selectedId);
-    }
+  inputKeydown = (e) => {
+    if (this.isTabPressed(e)) {
+      const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
+      if (selectedId) {
+        this.selectItem(selectedId);
+      }
 
-    this.sparkAutocomplete.hideResults();
+      this.sparkAutocomplete.hideResults();
+    }
   }
 
   selectItem = (id) => {
@@ -95,4 +97,7 @@ export class AutocompleteExampleBaseComponent {
     this.autocompleteValue = selectedEntry.value;
     this.sparkAutocomplete.hideResults();
   }
+
+  isTabPressed = (e) => e.key === 'Tab' || e.keyCode === 9;
 }
+

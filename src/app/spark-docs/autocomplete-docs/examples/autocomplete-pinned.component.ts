@@ -21,7 +21,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
         <input id="autocomplete-pinned-input" name="autocomplete-pinned-input" type="text"
           class="sprk-b-TextInput--has-svg-icon sprk-u-Width-100" aria-describedby="autocomplete-pinned--error-container"
           aria-autocomplete="list" sprkInput autocomplete="off" autocapitalize="off" spellcheck="false"
-          (focus)="inputFocused()" (blur)="inputBlurred()" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
+          (focus)="inputFocused()" (keydown)="inputKeydown($event)" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
       </div>
       <ul sprkAutocompleteResults aria-labelledby="autocomplete-pinned-label" role="listbox">
         <ng-container *ngIf="(data | search:autocompleteValue) as result">
@@ -111,13 +111,15 @@ export class AutocompleteExamplePinnedComponent {
     this.sparkAutocomplete.showResults();
   }
 
-  inputBlurred = () => {
-    const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
-    if (selectedId) {
-      this.selectItem(selectedId);
-    }
+  inputKeydown = (e) => {
+    if (this.isTabPressed(e)) {
+      const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
+      if (selectedId) {
+        this.selectItem(selectedId);
+      }
 
-    this.sparkAutocomplete.hideResults();
+      this.sparkAutocomplete.hideResults();
+    }
   }
 
   selectItem = (id) => {
@@ -125,4 +127,6 @@ export class AutocompleteExamplePinnedComponent {
     this.autocompleteValue = selectedEntry.value;
     this.sparkAutocomplete.hideResults();
   }
+
+  isTabPressed = (e) => e.key === 'Tab' || e.keyCode === 9;
 }

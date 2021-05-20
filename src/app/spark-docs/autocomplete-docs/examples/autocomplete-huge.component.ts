@@ -37,7 +37,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
           autocomplete="off"
           autocapitalize="off"
           spellcheck="false"
-          (focus)="inputFocused()" (blur)="inputBlurred()" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput
+          (focus)="inputFocused()" (keydown)="inputKeydown($event)" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput
         >
         <label
           id="autocomplete-label4"
@@ -109,13 +109,15 @@ export class AutocompleteExampleHugeComponent {
     this.sparkAutocomplete.showResults();
   }
 
-  inputBlurred = () => {
-    const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
-    if (selectedId) {
-      this.selectItem(selectedId);
-    }
+  inputKeydown = (e) => {
+    if (this.isTabPressed(e)) {
+      const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
+      if (selectedId) {
+        this.selectItem(selectedId);
+      }
 
-    this.sparkAutocomplete.hideResults();
+      this.sparkAutocomplete.hideResults();
+    }
   }
 
   selectItem = (id) => {
@@ -123,4 +125,6 @@ export class AutocompleteExampleHugeComponent {
     this.autocompleteValue = selectedEntry.value;
     this.sparkAutocomplete.hideResults();
   }
+
+  isTabPressed = (e) => e.key === 'Tab' || e.keyCode === 9;
 }

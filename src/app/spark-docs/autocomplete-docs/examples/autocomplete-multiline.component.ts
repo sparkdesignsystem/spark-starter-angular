@@ -21,7 +21,7 @@ import { AutocompleteMultilinePipe } from './autocomplete-docs-multiline.pipe';
         <input id="autocomplete-multiline-input" name="autocomplete-multiline-input" type="text"
           class="sprk-b-TextInput--has-svg-icon sprk-u-Width-100" aria-describedby="autocomplete-multiline--error-container"
           aria-autocomplete="list" sprkInput autocomplete="off" autocapitalize="off" spellcheck="false"
-          (focus)="inputFocused()" (blur)="inputBlurred()" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
+          (focus)="inputFocused()" (keydown)="inputKeydown($event)" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
       </div>
       <ul sprkAutocompleteResults aria-labelledby="autocomplete-multiline-label" role="listbox">
         <ng-container *ngIf="(data | search_multiline:autocompleteValue) as result">
@@ -75,13 +75,15 @@ export class AutocompleteExampleMultilineComponent {
     this.sparkAutocomplete.showResults();
   }
 
-  inputBlurred = () => {
-    const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
-    if (selectedId) {
-      this.selectItem(selectedId);
-    }
+  inputKeydown = (e) => {
+    if (this.isTabPressed(e)) {
+      const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
+      if (selectedId) {
+        this.selectItem(selectedId);
+      }
 
-    this.sparkAutocomplete.hideResults();
+      this.sparkAutocomplete.hideResults();
+    }
   }
 
   selectItem = (id) => {
@@ -89,4 +91,6 @@ export class AutocompleteExampleMultilineComponent {
     this.autocompleteValue = selectedEntry.value1 + ", " + selectedEntry.value2;
     this.sparkAutocomplete.hideResults();
   }
+
+  isTabPressed = (e) => e.key === 'Tab' || e.keyCode === 9;
 }

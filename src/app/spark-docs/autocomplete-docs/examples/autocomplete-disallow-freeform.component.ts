@@ -21,7 +21,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
         <input id="autocomplete-disallow-freeform-input" name="autocomplete-disallow-freeform-input" type="text"
           class="sprk-b-TextInput--has-svg-icon sprk-u-Width-100" aria-describedby="autocomplete-disallow-freeform--error-container"
           aria-autocomplete="list" sprkInput autocomplete="off" autocapitalize="off" spellcheck="false"
-          (focus)="inputFocused()" (blur)="inputBlurred()" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
+          (focus)="inputFocused()" (keydown)="inputKeydown($event)" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
       </div>
       <ul sprkAutocompleteResults aria-labelledby="autocomplete-disallow-freeform-label" role="listbox">
         <ng-container *ngIf="(data | search:autocompleteValue) as result">
@@ -81,22 +81,24 @@ export class AutocompleteExampleDisallowFreeformComponent {
     this.sparkAutocomplete.showResults();
   }
 
-  inputBlurred = () => {
-    const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
-    if (selectedId) {
-      this.selectItem(selectedId);
+  inputKeydown = (e) => {
+    if (this.isTabPressed(e)) {
+      const selectedId = this.exampleInput.nativeElement.getAttribute('aria-activedescendant');
+      if (selectedId) {
+        this.selectItem(selectedId);
+      }
+
+      let entryExists = false;
+      entryExists = this.data.filter(
+        x => x.value.toLowerCase() === this.autocompleteValue.toLowerCase()
+      ).length > 0;
+
+      if (!entryExists) {
+        this.autocompleteValue = "";
+      }
+
+      this.sparkAutocomplete.hideResults();
     }
-
-    let entryExists = false;
-    entryExists = this.data.filter(
-      x => x.value.toLowerCase() === this.autocompleteValue.toLowerCase()
-    ).length > 0;
-
-    if (!entryExists) {
-      this.autocompleteValue = "";
-    }
-
-    this.sparkAutocomplete.hideResults();
   }
 
   selectItem = (id) => {
@@ -104,4 +106,6 @@ export class AutocompleteExampleDisallowFreeformComponent {
     this.autocompleteValue = selectedEntry.value;
     this.sparkAutocomplete.hideResults();
   }
+
+  isTabPressed = (e) => e.key === 'Tab' || e.keyCode === 9;
 }
