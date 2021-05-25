@@ -54,17 +54,16 @@ export class AutocompleteExampleDisallowFreeformComponent {
   autocompleteValue = '';
 
   data = [
-    { id: 1, value: "Apple" },
-    { id: 2, value: "Avocado" },
-    { id: 3, value: "Banana" },
-    { id: 4, value: "Blackberry" },
-    { id: 5, value: "Blueberry" },
-    { id: 6, value: "Clementine" },
-    { id: 7, value: "Fig" },
-    { id: 8, value: "Grape" },
-    { id: 9, value: "Kumquat" },
-    { id: 10, value: "Lemon" },
-    { id: 11, value: "Papaya" },
+    { id: 11, value: "Apple" },
+    { id: 12, value: "Avocado" },
+    { id: 13, value: "Banana" },
+    { id: 14, value: "Blackberry" },
+    { id: 15, value: "Blueberry" },
+    { id: 16, value: "Clementine" },
+    { id: 17, value: "Fig" },
+    { id: 18, value: "Grape" },
+    { id: 19, value: "Kumquat" },
+    { id: 20, value: "Lemon" },
   ];
 
   @ViewChild(SprkAutocompleteComponent) sparkAutocomplete: SprkAutocompleteComponent;

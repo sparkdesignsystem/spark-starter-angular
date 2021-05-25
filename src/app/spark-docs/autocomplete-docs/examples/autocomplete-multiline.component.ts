@@ -54,11 +54,11 @@ export class AutocompleteExampleMultilineComponent {
   autocompleteValue = '';
 
   data = [
-    { id: 1, value1: "Detroit", value2: "Michigan" },
-    { id: 2, value1: "Chicago", value2: "Illinois" },
-    { id: 3, value1: "New York", value2: "New York" },
-    { id: 4, value1: "Portland", value2: "Oregon" },
-    { id: 5, value1: "San Francisco", value2: "California" },
+    { id: 21, value1: "Detroit", value2: "Michigan" },
+    { id: 22, value1: "Chicago", value2: "Illinois" },
+    { id: 23, value1: "New York", value2: "New York" },
+    { id: 24, value1: "Portland", value2: "Oregon" },
+    { id: 25, value1: "San Francisco", value2: "California" },
   ];
 
   @ViewChild(SprkAutocompleteComponent) sparkAutocomplete: SprkAutocompleteComponent;

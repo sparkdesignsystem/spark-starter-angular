@@ -64,7 +64,6 @@ export class AutocompleteExampleBaseComponent {
     { id: 8, value: "Grape" },
     { id: 9, value: "Kumquat" },
     { id: 10, value: "Lemon" },
-    { id: 11, value: "Papaya" },
   ];
 
   @ViewChild(SprkAutocompleteComponent) sparkAutocomplete: SprkAutocompleteComponent;

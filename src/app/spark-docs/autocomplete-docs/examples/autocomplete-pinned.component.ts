@@ -84,17 +84,16 @@ export class AutocompleteExamplePinnedComponent {
   autocompleteValue = '';
 
   data = [
-    { id: 1, value: "Apple" },
-    { id: 2, value: "Avocado" },
-    { id: 3, value: "Banana" },
-    { id: 4, value: "Blackberry" },
-    { id: 5, value: "Blueberry" },
-    { id: 6, value: "Clementine" },
-    { id: 7, value: "Fig" },
-    { id: 8, value: "Grape" },
-    { id: 9, value: "Kumquat" },
-    { id: 10, value: "Lemon" },
-    { id: 11, value: "Papaya" },
+    { id: 31, value: "Apple" },
+    { id: 32, value: "Avocado" },
+    { id: 33, value: "Banana" },
+    { id: 34, value: "Blackberry" },
+    { id: 35, value: "Blueberry" },
+    { id: 36, value: "Clementine" },
+    { id: 37, value: "Fig" },
+    { id: 38, value: "Grape" },
+    { id: 39, value: "Kumquat" },
+    { id: 40, value: "Lemon" },
   ];
 
   @ViewChild(SprkAutocompleteComponent) sparkAutocomplete: SprkAutocompleteComponent;

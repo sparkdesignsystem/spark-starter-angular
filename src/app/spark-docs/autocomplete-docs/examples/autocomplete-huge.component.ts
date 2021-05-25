@@ -82,17 +82,16 @@ export class AutocompleteExampleHugeComponent {
   autocompleteValue = '';
 
   data = [
-    { id: 1, value: "Apple" },
-    { id: 2, value: "Avocado" },
-    { id: 3, value: "Banana" },
-    { id: 4, value: "Blackberry" },
-    { id: 5, value: "Blueberry" },
-    { id: 6, value: "Clementine" },
-    { id: 7, value: "Fig" },
-    { id: 8, value: "Grape" },
-    { id: 9, value: "Kumquat" },
-    { id: 10, value: "Lemon" },
-    { id: 11, value: "Papaya" },
+    { id: 51, value: "Apple" },
+    { id: 52, value: "Avocado" },
+    { id: 53, value: "Banana" },
+    { id: 54, value: "Blackberry" },
+    { id: 55, value: "Blueberry" },
+    { id: 56, value: "Clementine" },
+    { id: 57, value: "Fig" },
+    { id: 58, value: "Grape" },
+    { id: 59, value: "Kumquat" },
+    { id: 60, value: "Lemon" },
   ];
 
   @ViewChild(SprkAutocompleteComponent) sparkAutocomplete: SprkAutocompleteComponent;
