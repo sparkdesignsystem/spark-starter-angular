@@ -11,7 +11,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
       <label id="autocomplete-base-label" for="autocomplete-base-input" hasIcon="true" sprkLabel>
         Search for a Fruit
       </label>
-      <div class="sprk-b-TextInputIconContainer" aria-labelledby="autocomplete-base-label" role="combobox"
+      <div sprkAutocompleteInputContainer aria-labelledby="autocomplete-base-label" role="combobox"
         aria-haspopup="listbox">
         <sprk-icon iconName="search" additionalClasses="
             sprk-b-InlineSearch__icon

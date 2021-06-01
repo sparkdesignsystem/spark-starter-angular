@@ -9,7 +9,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
   <sprk-autocomplete (itemSelectedEvent)="selectItem($event)">
     <sprk-input-container variant="huge">
       <div
-        class="sprk-b-TextInputIconContainer"
+        sprkAutocompleteInputContainer
         aria-labelledby="autocomplete-label4"
         role="combobox"
         aria-haspopup="listbox"

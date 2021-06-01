@@ -11,7 +11,7 @@ import { AutocompleteMultilinePipe } from './autocomplete-docs-multiline.pipe';
       <label id="autocomplete-multiline-label" for="autocomplete-multiline-input" hasIcon="true" sprkLabel>
         Search for a City
       </label>
-      <div class="sprk-b-TextInputIconContainer" aria-labelledby="autocomplete-multiline-label" role="combobox"
+      <div sprkAutocompleteInputContainer aria-labelledby="autocomplete-multiline-label" role="combobox"
         aria-haspopup="listbox">
         <sprk-icon iconName="search" additionalClasses="
             sprk-b-InlineSearch__icon
