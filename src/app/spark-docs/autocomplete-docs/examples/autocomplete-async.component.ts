@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { SprkAutocompleteComponent } from '@sparkdesignsystem/spark-angular';
-import { LiveAnnouncer } from "@angular/cdk/a11y";
 import { AutocompletePipe } from './autocomplete-docs.pipe';
 
 @Component({
@@ -49,7 +48,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
   `,
 })
 export class AutocompleteExampleAsyncComponent {
-  constructor(private announcer: LiveAnnouncer, private autocompletePipe: AutocompletePipe<any>) { }
+  constructor(private autocompletePipe: AutocompletePipe<any>) { }
 
   autocompleteValue = '';
 
@@ -73,7 +72,7 @@ export class AutocompleteExampleAsyncComponent {
   inputChanged = (inputValue) => {
     const numberFound = this.autocompletePipe.transform(this.data, inputValue).length;
 
-    this.announcer.announce(numberFound + " results found.");
+    // this.announcer.announce(numberFound + " results found.");
     this.autocompleteValue = inputValue;
   }
 
