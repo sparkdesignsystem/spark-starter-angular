@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { SprkAutocompleteComponent } from '@sparkdesignsystem/spark-angular';
 import { AutocompletePipe } from './autocomplete-docs.pipe';
+import { LiveAnnouncer } from "@angular/cdk/a11y";
 
 @Component({
   selector: 'sprk-autocomplete-example-huge',
@@ -76,7 +77,7 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
   `,
 })
 export class AutocompleteExampleHugeComponent {
-  constructor(private autocompletePipe: AutocompletePipe<any>) { }
+  constructor(private announcer: LiveAnnouncer, private autocompletePipe: AutocompletePipe<any>) { }
 
   autocompleteValue = '';
 
@@ -99,7 +100,7 @@ export class AutocompleteExampleHugeComponent {
   inputChanged = (inputValue) => {
     const numberFound = this.autocompletePipe.transform(this.data, inputValue).length;
 
-    // this.announcer.announce(numberFound + " results found.");
+    this.announcer.announce(numberFound + " results found.");
     this.autocompleteValue = inputValue;
   }
 

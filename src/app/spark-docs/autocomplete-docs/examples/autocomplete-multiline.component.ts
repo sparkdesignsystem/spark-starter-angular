@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { SprkAutocompleteComponent } from '@sparkdesignsystem/spark-angular';
 import { AutocompleteMultilinePipe } from './autocomplete-docs-multiline.pipe';
+import { LiveAnnouncer } from "@angular/cdk/a11y";
 
 @Component({
   selector: 'sprk-autocomplete-example-multiline',
@@ -48,7 +49,7 @@ import { AutocompleteMultilinePipe } from './autocomplete-docs-multiline.pipe';
   `,
 })
 export class AutocompleteExampleMultilineComponent {
-  constructor(private autocompletePipe: AutocompleteMultilinePipe<any>) { }
+  constructor(private announcer: LiveAnnouncer, private autocompletePipe: AutocompleteMultilinePipe<any>) { }
 
   autocompleteValue = '';
 
@@ -66,7 +67,7 @@ export class AutocompleteExampleMultilineComponent {
   inputChanged = (inputValue) => {
     const numberFound = this.autocompletePipe.transform(this.data, inputValue).length;
 
-    // this.announcer.announce(numberFound + " results found.");
+    this.announcer.announce(numberFound + " results found.");
     this.autocompleteValue = inputValue;
   }
 
