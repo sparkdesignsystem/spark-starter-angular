@@ -4,26 +4,26 @@ import { AutocompletePipe } from './autocomplete-docs.pipe';
 import { LiveAnnouncer } from "@angular/cdk/a11y";
 
 @Component({
-  selector: 'sprk-autocomplete-example-base',
+  selector: 'sprk-autocomplete-example-default',
   template: `
   <sprk-autocomplete (itemSelectedEvent)="selectItem($event)">
     <sprk-input-container>
-      <label id="autocomplete-base-label" for="autocomplete-base-input" hasIcon="true" sprkLabel>
+      <label id="autocomplete-default-label" for="autocomplete-default-input" hasIcon="true" sprkLabel>
         Search for a Fruit
       </label>
-      <div sprkAutocompleteInputContainer aria-labelledby="autocomplete-base-label" role="combobox"
+      <div sprkAutocompleteInputContainer aria-labelledby="autocomplete-default-label" role="combobox"
         aria-haspopup="listbox">
         <sprk-icon iconName="search" additionalClasses="
             sprk-b-InlineSearch__icon
             sprk-c-Icon--filled-current-color
             sprk-c-Icon--stroke-current-color
           " sprk-input-icon ariaHidden="true"></sprk-icon>
-        <input id="autocomplete-base-input" name="autocomplete-base-input" type="text"
-          class="sprk-b-TextInput--has-svg-icon sprk-u-Width-100" aria-describedby="autocomplete-base--error-container"
+        <input id="autocomplete-default-input" name="autocomplete-default-input" type="text"
+          class="sprk-b-TextInput--has-svg-icon sprk-u-Width-100" aria-describedby="autocomplete-default--error-container"
           aria-autocomplete="list" sprkInput autocomplete="off" autocapitalize="off" spellcheck="false"
           (focus)="inputFocused()" (keydown)="inputKeydown($event)" [ngModel]="autocompleteValue" (ngModelChange)="inputChanged($event)" #exampleInput>
       </div>
-      <ul sprkAutocompleteResults aria-labelledby="autocomplete-base-label" role="listbox">
+      <ul sprkAutocompleteResults aria-labelledby="autocomplete-default-label" role="listbox">
         <ng-container *ngIf="(data | search:autocompleteValue) as result">
           <li *ngIf="result.length === 0" sprkAutocompleteResult>
             <div class="sprk-o-Flag">
@@ -43,12 +43,12 @@ import { LiveAnnouncer } from "@angular/cdk/a11y";
         </ng-container>
       </ul>
     </sprk-input-container>
-    <span sprkFieldError id="autocomplete-base--error-container">
+    <span sprkFieldError id="autocomplete-default--error-container">
     </span>
   </sprk-autocomplete>
   `,
 })
-export class AutocompleteExampleBaseComponent {
+export class AutocompleteExampleDefaultComponent {
   constructor(private announcer: LiveAnnouncer, private autocompletePipe: AutocompletePipe<any>) { }
 
   autocompleteValue = '';

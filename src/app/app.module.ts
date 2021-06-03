@@ -42,7 +42,7 @@ import { TabbedNavigationDocsComponent } from './spark-docs/tabbed-navigation-do
 import { TableDocsComponent } from './spark-docs/table-docs/table-docs.component';
 import { ToggleDocsComponent } from './spark-docs/toggle-docs/toggle-docs.component';
 import { TooltipDocsComponent } from './spark-docs/tooltip-docs/tooltip-docs.component';
-import { AutocompleteExampleBaseComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-base.component';
+import { AutocompleteExampleDefaultComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-default.component';
 import { AutocompleteExampleDisallowFreeformComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-disallow-freeform.component';
 import { AutocompleteExampleMultilineComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-multiline.component';
 import { AutocompleteExamplePinnedComponent } from './spark-docs/autocomplete-docs/examples/autocomplete-pinned.component';
@@ -118,7 +118,7 @@ const appRoutes: Routes = [
     AutocompleteDocsComponent,
     AutocompletePipe,
     AutocompleteMultilinePipe,
-    AutocompleteExampleBaseComponent,
+    AutocompleteExampleDefaultComponent,
     AutocompleteExampleDisallowFreeformComponent,
     AutocompleteExampleMultilineComponent,
     AutocompleteExamplePinnedComponent,
