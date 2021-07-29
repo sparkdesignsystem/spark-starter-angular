@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
         Dictionary
       </h2>
 
-      <sprk-dictionary [data]="keyValuePairs" idString="dictionary-1"></sprk-dictionary>
+      <sprk-dictionary [keyValuePairs]="keyValuePairs" idString="dictionary-1"></sprk-dictionary>
 
       <h2 class="sprk-demo-b-h2">
         Striped Dictionary
       </h2>
 
-      <sprk-dictionary [data]="keyValuePairs" dictionaryType="striped" idString="dictionary-2"></sprk-dictionary>
+      <sprk-dictionary [keyValuePairs]="keyValuePairs" dictionaryType="striped" idString="dictionary-2"></sprk-dictionary>
     </div>
   `,
   styles: ['']

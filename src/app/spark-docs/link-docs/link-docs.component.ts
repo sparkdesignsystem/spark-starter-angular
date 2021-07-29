@@ -5,174 +5,127 @@ import { Component } from '@angular/core';
   template: `
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">External Links</h2>
-
-      <sprk-link href="https://www.google.com" additionalClasses="sprk-u-mrm"
-        >https://www.google.com</sprk-link
+      <a
+        href="https://www.google.com"
+        sprkLink
+        class="sprk-u-mrm"
       >
-      <sprk-link href="http://www.google.com">http://www.google.com</sprk-link>
+        https://www.google.com
+      </a>
+      <a
+        href="http://www.google.com"
+        sprkLink
+      >
+        http://www.google.com
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Same Page Links</h2>
-
-      <sprk-link href="#info" additionalClasses="sprk-u-mrm"
-        >Jump Link</sprk-link
+      <a
+        href="/links#info"
+        sprkLink
+        class="sprk-u-mrm"
       >
-      <sprk-link href="/buttons#foo" aria-label="foo"
-        >Jump Link With Page</sprk-link
+        Jump Link
+      </a>
+      <a
+        href="/buttons#foo"
+        sprkLink
       >
+        Jump Link with Page
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Link with no href provided</h2>
-
-      <sprk-link>No href provided.</sprk-link>
-    </div>
-
-    <div class="sprk-demo-o-ContentGrouping">
-      <h2 class="sprk-demo-b-h2">Link Using External Input</h2>
-
-      <sprk-link href="tel:+123456789" isExternal="true"> Spark </sprk-link>
+      <a
+        sprkLink
+      >
+        No href provided
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Link Using tel</h2>
-
-      <sprk-link href="tel:+123456789"> Tel Link </sprk-link>
+      <a
+        href="tel:+123456789"
+        sprkLink
+      >
+        Call Spark
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Link Using mailto</h2>
-
-      <sprk-link href="mailto:example@example.com"> mailto Link </sprk-link>
+      <a
+        href="mailto:example@example.com"
+        sprkLink
+      >
+        Email Spark
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Link</h2>
-
-      <sprk-link
+      <a
+        sprkLink
         href="/alerts"
         idString="link-1"
-        analyticsString="object.action.event"
         target="_blank"
       >
         This is a standard Spark Link!
-      </sprk-link>
+      </a>
 
       <p>
         Here is a
-        <sprk-link
-          href="/alerts"
-          idString="link-1"
-          analyticsString="object.action.event"
-          target="_blank"
+        <a
+        sprkLink
+        href="/alerts"
+        idString="link-1"
+        target="_blank"
         >
           link
-        </sprk-link>
+        </a>
         in the middle of a line
       </p>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Simple Link</h2>
-
-      <sprk-link
-        linkType="simple"
-        href="/alerts"
-        idString="link-2"
-        analyticsString="object.action.event"
-      >
-        Hello, World.
-      </sprk-link>
+        <a
+          sprkLink
+          href="/alerts"
+          variant="simple"
+        >
+          Hello, World.
+        </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Additional Classes</h2>
-
-      <sprk-link
-        additionalClasses="sprk-u-mbm"
-        href="/buttons"
-        idString="link-3"
-        analyticsString="object.action.event"
+      <a
+        sprkLink
+        href="/alerts"
+        class="sprk-u-mbm"
       >
         Link with Margin Bottom class
-      </sprk-link>
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Disabled Link</h2>
-
-      <sprk-link
+      <a
+        sprkLink
+        href="/alerts"
         isDisabled="true"
-        href="/buttons"
-        idString="link-4"
-        analyticsString="object.action.event"
       >
         This is a Spark Disabled Link
-      </sprk-link>
+      </a>
     </div>
 
     <div class="sprk-demo-o-ContentGrouping">
       <h2 class="sprk-demo-b-h2">Icon With Text Link</h2>
-
-      <sprk-link
-        linkType="icon"
-        href="/icons"
-        idString="link-5"
-        analyticsString="object.action.event"
-      >
-        <sprk-icon
-          iconName="communication"
-          additionalClasses="sprk-c-Icon--l sprk-c-Icon--stroke-current-color sprk-c-Icon--filled-current-color sprk-u-mrs"
-        ></sprk-icon>
-
-        Message Us
-      </sprk-link>
-    </div>
-    <div id="info">Hi, I'm info!</div>
-
-    <div class="sprk-demo-o-ContentGrouping">
-      <h2 class="sprk-demo-b-h2">
-        Link Directive
-      </h2>
-
-      <a
-        href="#"
-        sprkLink
-        idString="default-link"
-        analyticsString="default-link"
-      >
-        Default Link
-      </a>
-
-      <a
-        routerLink="/alerts"
-        sprkLink
-      >
-        Default Link Using Router
-      </a>
-
-      <a
-        href="#"
-        sprkLink
-        variant="simple"
-        idString="simple-link"
-        analyticsString="simple-link"
-      >
-        Simple Link
-      </a>
-
-      <a
-        sprkLink
-        href="#"
-        variant="light"
-        idString="light-link"
-        analyticsString="light-link"
-        class="sprk-u-BackgroundColor--black"
-      >
-        Light Link
-      </a>
-
       <a
         href="#"
         sprkLink
@@ -181,7 +134,7 @@ import { Component } from '@angular/core';
         analyticsString="icon-link-1"
       >
         <sprk-icon
-          iconName="arrow-left"
+          iconType="arrow-left"
           additionalClasses="
             sprk-c-Icon--l
             sprk-c-Icon--filled-current-color
@@ -190,58 +143,8 @@ import { Component } from '@angular/core';
         </sprk-icon>
         Back
       </a>
-      <a
-        href="#"
-        sprkLink
-        isDisabled="true"
-        idString="disabled-link"
-        analyticsString="disabled-link"
-      >
-        Disabled Link
-      </a>
-
-      <a
-        href="#"
-        sprkLink
-        variant="simple"
-        isDisabled="true"
-        idString="disabled-link-simple"
-        analyticsString="disabled-link-simple"
-      >
-        Disabled Simple Link
-      </a>
-
-      <a
-        isDisabled="true"
-        sprkLink
-        href="#"
-        variant="light"
-        idString="disabled-light-link"
-        class="sprk-u-BackgroundColor--black"
-        analyticsString="disabled-light-link"
-      >
-        Disabled Light Link
-      </a>
-
-      <a
-        href="#"
-        sprkLink
-        variant="hasIcon"
-        isDisabled="true"
-        idString="disabled-icon-link-1"
-        analyticsString="disabled-icon-link-1"
-      >
-        <sprk-icon
-          iconName="arrow-left"
-          additionalClasses="
-            sprk-c-Icon--xl
-            sprk-c-Icon--filled-current-color
-            sprk-u-mrs"
-        >
-        </sprk-icon>
-        Disabled Icon Link
-      </a>
     </div>
+    <div id="info">Hi, I'm info!</div>
   `,
 })
 export class LinkDocsComponent {
