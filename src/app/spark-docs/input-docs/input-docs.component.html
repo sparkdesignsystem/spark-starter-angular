@@ -155,33 +155,6 @@
   </span>
 </sprk-checkbox-group>
 
-<sprk-selection-container>
-  <label sprkLabel>
-    Deprecated Checkbox Group
-  </label>
-  <sprk-selection-item-container>
-    <input type="checkbox" name="checkbox_input" [(ngModel)]="checkbox_input10" sprkSelectionInput
-      #checkboxInput10="ngModel" data-id="checkbox-10" id="checkbox-10" (change)="onSelect($event)">
-    <label for="checkbox-10" sprkSelectionLabel>
-      Checkbox Item 1
-    </label>
-  </sprk-selection-item-container>
-  <sprk-selection-item-container>
-    <input type="checkbox" name="checkbox_input" [(ngModel)]="checkbox_input11" sprkSelectionInput
-      #checkboxInput11="ngModel" data-id="checkbox-11" id="checkbox-11" (change)="onSelect($event)">
-    <label for="checkbox-11" sprkSelectionLabel>
-      Checkbox Item 2
-    </label>
-  </sprk-selection-item-container>
-  <sprk-selection-item-container>
-    <input type="checkbox" name="checkbox_input" [(ngModel)]="checkbox_input12" sprkSelectionInput
-      #checkboxInput12="ngModel" data-id="checkbox-12" id="checkbox-12" (change)="onSelect($event)">
-    <label for="checkbox-12" sprkSelectionLabel>
-      Checkbox Item 3
-    </label>
-  </sprk-selection-item-container>
-</sprk-selection-container>
-
 <sprk-input-container>
   <label sprkLabel>Text Input Label</label>
   <input name="text_input" type="text" [(ngModel)]="text_input" #textInput="ngModel" sprkInput />
@@ -421,32 +394,6 @@
   </span>
 </sprk-radio-group>
 
-<sprk-selection-container>
-  <label sprkLabel>Deprecated Radio Group</label>
-  <sprk-selection-item-container>
-    <input type="radio" value="1" name="dep-radio_input" [(ngModel)]="radio_input4" sprkSelectionInput #radioInput4="ngModel"
-      data-id="radio-1" id="dep-radio-1" (change)="onRadioSelect($event)">
-    <label for="dep-radio-1" sprkSelectionLabel>
-      Item 1
-    </label>
-  </sprk-selection-item-container>
-  <sprk-selection-item-container>
-    <input type="radio" value="2" name="dep-radio_input" sprkSelectionInput [(ngModel)]="radio_input4" #radioInput4="ngModel"
-      data-id="radio-2" id="dep-radio-2" (change)="onRadioSelect($event)">
-    <label for="dep-radio-2" sprkSelectionLabel>
-      Item 2
-    </label>
-  </sprk-selection-item-container>
-  <sprk-selection-item-container>
-    <input type="radio" value="3" name="dep-radio_input" sprkSelectionInput [(ngModel)]="radio_input4" #radioInput4="ngModel"
-      data-id="radio-3" id="dep-radio-3" (change)="onRadioSelect($event)">
-    <label for="dep-radio-3" sprkSelectionLabel>
-      Item 3
-    </label>
-  </sprk-selection-item-container>
-</sprk-selection-container>
-
-
 <sprk-icon-input-container>
   <label class="sprk-b-Label--with-icon sprk-u-ScreenReaderText" sprkLabel>
     Search
@@ -456,23 +403,30 @@
   <input name="inline_search_input" class="sprk-b-TextInput--has-svg-icon" type="search" placeholder="Search"
     [(ngModel)]="inline_search_input" #inlineSearchInput="ngModel" data-id="input-search-1" sprkInput>
 </sprk-icon-input-container>
-<sprk-input-container>
-  <select class="sprk-b-Select" id="select-normal-1" aria-describedby="select-normal--error-container"
-    data-id="select-1" sprkInput>
-    <option value="none">Please choose...</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-    <optgroup label="Grouped Options">
-      <option value="g1">Grouped Option 1</option>
-      <option value="g2">Grouped Option 2</option>
-      <option value="g3">Grouped Option 3</option>
-    </optgroup>
-  </select>
-  <sprk-icon iconType="chevron-down" additionalClasses="sprk-c-Icon--stroke-current-color sprk-c-Icon--filled-current-color sprk-b-SelectContainer__icon"
-    sprk-select-icon></sprk-icon>
-  <label sprkLabel for="select-normal-1">Select Box Label</label>
-</sprk-input-container>
+  <sprk-input-container>
+    <label sprkLabel for="select-normal-1">Select Box Label</label>
+    <select
+      id="select-normal-1"
+      idString="select-1"
+      sprkSelect
+    >
+      <option value="none">Please choose...</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <optgroup label="Grouped Options">
+        <option value="g1">Grouped Option 1</option>
+        <option value="g2">Grouped Option 2</option>
+        <option value="g3">Grouped Option 3</option>
+      </optgroup>
+    </select>
+    <sprk-icon
+      iconName="chevron-down"
+      additionalClasses="sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color sprk-b-SelectContainer__icon"
+      sprk-select-icon
+      ariaHidden="true"
+    ></sprk-icon>
+  </sprk-input-container>
 <sprk-input-container>
   <label for="ssn-input" sprkLabel>SSN Input</label>
   <input type="{{ssnType}}" placeholder="000-00-0000" name="ssn_input" [(ngModel)]="ssn_input" #ssnInput="ngModel"
