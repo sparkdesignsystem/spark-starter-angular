@@ -14,6 +14,7 @@ import { LiveAnnouncer } from "@angular/cdk/a11y";
       <div sprkAutocompleteInputContainer aria-labelledby="autocomplete-multiline-label" role="combobox"
         aria-haspopup="listbox">
         <sprk-icon iconName="search" additionalClasses="
+            sprk-b-InputContainer__icon
             sprk-b-InlineSearch__icon
             sprk-c-Icon--filled-current-color
             sprk-c-Icon--stroke-current-color
@@ -39,7 +40,10 @@ import { LiveAnnouncer } from "@angular/cdk/a11y";
               </div>
             </div>
           </li>
-          <li *ngFor="let entry of result" sprkAutocompleteResult role="option" id={{entry.id}}>{{entry.value1}}, {{entry.value2}}</li>
+          <li *ngFor="let entry of result" sprkAutocompleteResult role="option" id={{entry.id}}>
+            <div class="sprk-u-FontWeight--bold">{{entry.value1}}</div>
+            <div class="sprk-u-FontStyle--italic">{{entry.value2}}</div>
+          </li>
         </ng-container>
       </ul>
     </sprk-input-container>

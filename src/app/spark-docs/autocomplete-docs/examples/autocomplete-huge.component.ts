@@ -17,6 +17,7 @@ import { LiveAnnouncer } from "@angular/cdk/a11y";
         <sprk-icon
           iconName="search"
           additionalClasses="
+            sprk-b-InputContainer__icon
             sprk-b-InlineSearch__icon
             sprk-c-Icon--filled-current-color
             sprk-c-Icon--stroke-current-color
